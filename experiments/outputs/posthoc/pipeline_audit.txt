@@ -1,0 +1,26 @@
+units: phase1 5229 phase2 12671 attacks 110
+
+[CHECK 1] Is the unit's own command line observable at its decision time?
+   units with a command line: 12222; command line first seen AFTER decision time: 0 (0 attacks)
+   units whose node versions extend beyond start+5s: 0 of 12671 (label uses max over versions; features use emulator at t)
+
+[CHECK 2] Feature spec: anything label-, time- or id-like?
+   forbidden columns used: none | n numeric 36 categorical ['exe', 'name', 'parent_exe', 'parent_name', 'grandparent_exe'] text ['command line', 'ancestor_cmdline']
+
+[CHECK 3] Fold time ordering and train/test attack command-line duplication (view B)
+   staging suspects 7005 helper suspects 45
+   fold 1: train max time <= test min time: True | test attacks 13; identical OWN cmdline in training attacks: 0; identical ANCESTOR cmdline: 0
+   fold 2: train max time <= test min time: True | test attacks 5; identical OWN cmdline in training attacks: 3; identical ANCESTOR cmdline: 0
+   fold 3: train max time <= test min time: True | test attacks 0; identical OWN cmdline in training attacks: 0; identical ANCESTOR cmdline: 0
+   fold 4: train max time <= test min time: True | test attacks 36; identical OWN cmdline in training attacks: 0; identical ANCESTOR cmdline: 0
+   fold 5: train max time <= test min time: True | test attacks 43; identical OWN cmdline in training attacks: 10; identical ANCESTOR cmdline: 0
+
+[CHECK 4] Label-shuffle sanity test (fold 5, view B): a leak-free pipeline must collapse
+   true labels    : ({'0.5': (25, 0, 0.735), 'logistic': (38, 0, 0.938)}, 67, 43)
+   shuffled labels: ({'0.5': (0, 431, 0.0), 'logistic': (6, 918, 0.012)}, 67, 43)
+
+[CHECK 5] Recompute pooled forest counts vs archived metrics.json (view B)
+   rf_raw: recomputed TP/FP 68/0 | archived 68/0
+   rf_rethresholded_logistic: recomputed TP/FP 85/1 | archived 85/1
+   rf_threshold_oob_f1: recomputed TP/FP 81/0 | archived 81/0
+   pooled records match my rebuild of view B chunks 1-5: True | attacks 97 vs 97

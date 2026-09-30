@@ -1,0 +1,92 @@
+{
+ "run": "rolling5_exclude_staging",
+ "store": "outputs/repeats/llm_repeats.sqlite",
+ "conditions": {
+  "context": {
+   "n_records": 352,
+   "n_records_with_all_reps": 352,
+   "reps": [
+    1,
+    2,
+    3
+   ],
+   "published": {
+    "tp": 85,
+    "fp": 6,
+    "f1": 0.9042553191489361
+   },
+   "records_with_any_verdict_differing_from_published": 8,
+   "record_flip_rate": 0.022727272727272728,
+   "record_flip_rate_attacks": 0.030927835051546393,
+   "record_flip_rate_benign": 0.0196078431372549,
+   "records_unstable_across_reps": 8,
+   "verdict_level_disagreement_with_published": 0.011363636363636362,
+   "f1_range": [
+    0.8936170212765957,
+    0.91005291005291
+   ],
+   "fp_range": [
+    6,
+    7
+   ],
+   "tp_range": [
+    84,
+    86
+   ],
+   "snapshots": {
+    "gpt-4o-mini-2024-07-18": 1056
+   },
+   "distinct_scores": [
+    0.1,
+    0.7,
+    0.8,
+    0.85,
+    0.9
+   ],
+   "per_rep": [
+    {
+     "rep": 1,
+     "n": 352,
+     "tp": 86,
+     "fp": 6,
+     "f1": 0.91005291005291,
+     "differs_from_published": 1,
+     "forest_minus_llm_f1": 0.0189088385809697,
+     "mcnemar_vs_forest": [
+      13,
+      9,
+      0.5234670639038086
+     ]
+    },
+    {
+     "rep": 2,
+     "n": 352,
+     "tp": 84,
+     "fp": 6,
+     "f1": 0.8983957219251337,
+     "differs_from_published": 5,
+     "forest_minus_llm_f1": 0.030566026708745975,
+     "mcnemar_vs_forest": [
+      15,
+      9,
+      0.30745625495910645
+     ]
+    },
+    {
+     "rep": 3,
+     "n": 352,
+     "tp": 84,
+     "fp": 7,
+     "f1": 0.8936170212765957,
+     "differs_from_published": 6,
+     "forest_minus_llm_f1": 0.035344727357284,
+     "mcnemar_vs_forest": [
+      16,
+      9,
+      0.2295229434967041
+     ]
+    }
+   ]
+  }
+ }
+}

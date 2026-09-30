@@ -1,0 +1,36 @@
+{
+ "rolling5_exclude_staging": {
+  "n": 352,
+  "n_tool_calls_hist": {
+   "3": 3,
+   "4": 231,
+   "5": 106,
+   "6": 12
+  },
+  "distinct_tools_hist": {
+   "3": 4,
+   "4": 348
+  },
+  "mean_input_tokens": 2550.46875,
+  "mean_output_tokens": 157.94602272727272,
+  "mean_api_calls": 2.6875
+ },
+ "rolling5_allbenign_exclude_staging": {
+  "n": 3554,
+  "n_tool_calls_hist": {
+   "2": 1,
+   "3": 43,
+   "4": 2506,
+   "5": 903,
+   "6": 101
+  },
+  "distinct_tools_hist": {
+   "2": 1,
+   "3": 44,
+   "4": 3509
+  },
+  "mean_input_tokens": 2388.8652222847495,
+  "mean_output_tokens": 154.9831176139561,
+  "mean_api_calls": 2.573157006190208
+ }
+}

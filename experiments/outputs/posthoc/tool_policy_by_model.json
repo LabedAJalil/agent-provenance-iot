@@ -1,0 +1,103 @@
+{
+ "gpt-4o-mini": {
+  "n": 352,
+  "calls_histogram": {
+   "3": 3,
+   "4": 231,
+   "5": 106,
+   "6": 12
+  },
+  "distinct_histogram": {
+   "3": 4,
+   "4": 348
+  },
+  "records_repeating_a_lookup": 119,
+  "records_at_budget": 12,
+  "most_common_sequences": {
+   "get_process_tree,get_file_events,get_socket_events,get_children": 161,
+   "get_process_tree,get_file_events,get_socket_events,get_children,get_file_events": 54,
+   "get_process_tree,get_file_events,get_children,get_socket_events": 51
+  }
+ },
+ "qwen3-4b-instruct-2507": {
+  "n": 352,
+  "calls_histogram": {
+   "0": 5,
+   "2": 240,
+   "3": 106,
+   "4": 1
+  },
+  "distinct_histogram": {
+   "0": 5,
+   "2": 240,
+   "3": 106,
+   "4": 1
+  },
+  "records_repeating_a_lookup": 0,
+  "records_at_budget": 0,
+  "most_common_sequences": {
+   "get_file_events,get_socket_events": 109,
+   "get_process_tree,get_file_events": 63,
+   "get_process_tree,get_file_events,get_socket_events": 59
+  }
+ },
+ "qwen3-8b": {
+  "n": 352,
+  "calls_histogram": {
+   "0": 351,
+   "1": 1
+  },
+  "distinct_histogram": {
+   "0": 351,
+   "1": 1
+  },
+  "records_repeating_a_lookup": 0,
+  "records_at_budget": 0,
+  "most_common_sequences": {
+   "": 351,
+   "get_process_tree": 1
+  }
+ },
+ "llama-3.1-8b-instruct": {
+  "n": 352,
+  "calls_histogram": {
+   "1": 13,
+   "2": 3,
+   "3": 14,
+   "4": 23,
+   "5": 28,
+   "6": 271
+  },
+  "distinct_histogram": {
+   "1": 301,
+   "2": 34,
+   "3": 13,
+   "4": 4
+  },
+  "records_repeating_a_lookup": 339,
+  "records_at_budget": 271,
+  "most_common_sequences": {
+   "get_process_tree,get_process_tree,get_process_tree,get_process_tree,get_process_tree,get_process_tree": 231,
+   "get_process_tree,get_process_tree,get_process_tree,get_process_tree": 22,
+   "get_process_tree,get_process_tree,get_process_tree,get_process_tree,get_process_tree": 18
+  }
+ },
+ "gemma-3-4b-it": {
+  "n": 352,
+  "calls_histogram": {
+   "0": 211,
+   "1": 141
+  },
+  "distinct_histogram": {
+   "0": 211,
+   "1": 141
+  },
+  "records_repeating_a_lookup": 0,
+  "records_at_budget": 0,
+  "most_common_sequences": {
+   "": 211,
+   "get_process_tree": 140,
+   "get_children": 1
+  }
+ }
+}

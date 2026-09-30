@@ -1,0 +1,13 @@
+{
+ "pooled_records": 3554,
+ "records_with_a_cut_ancestor_line": 192,
+ "attacks_with_a_cut_ancestor_line": 31,
+ "test_attacks": 97,
+ "attacks_base64_visible_in_full_context": 75,
+ "attacks_base64_visible_in_fixed_context": 46,
+ "attacks_base64_lost_by_the_cut": 29,
+ "gpt4omini_fixed_context_detects_among_base64_lost": 25,
+ "attacks_gained_by_tool_use_over_fixed_context": 8,
+ "of_which_base64_lost_by_the_cut": 4,
+ "note": "last three fields computed from llm_scores_{context,agent}.csv and the ancestor command lines in test_predictions.csv (first three ancestors, 120-character cut)"
+}

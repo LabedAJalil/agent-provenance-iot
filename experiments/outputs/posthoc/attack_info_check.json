@@ -1,0 +1,510 @@
+{
+ "source": "Dataset/Supplementary Material/attack_info.csv (extracted from MITRE Caldera reports by the dataset authors)",
+ "n_steps": 58,
+ "n_steps_cleanup": 13,
+ "steps_whose_pid_is_a_recorded_process": 58,
+ "steps_whose_pid_is_a_labelled_attack": 58,
+ "steps_with_a_labelled_attack_within_40_pids_and_10_min": 14,
+ "staging_suspect_pids_in_raw_csv": 7005,
+ "staging_suspects_inside_a_stager_step_interval": 7005,
+ "stager_steps": [
+  {
+   "step_pid": 59405,
+   "step_time": 1701528209.0,
+   "next_step_time": 1701532496.0,
+   "suspects_started_between_step_and_next_step": 231,
+   "suspect_parent_pids": {
+    "59438": 230,
+    "59431": 1
+   },
+   "parent_pid_minus_step_pid": {
+    "33": 230,
+    "26": 1
+   },
+   "minutes_from_step_to_last_suspect": 71.39631666739781
+  },
+  {
+   "step_pid": 64528,
+   "step_time": 1701532496.0,
+   "next_step_time": 1701535041.0,
+   "suspects_started_between_step_and_next_step": 6774,
+   "suspect_parent_pids": {
+    "64561": 4449,
+    "59438": 2324,
+    "64554": 1
+   },
+   "parent_pid_minus_step_pid": {
+    "33": 4449,
+    "-5090": 2324,
+    "26": 1
+   },
+   "minutes_from_step_to_last_suspect": 42.401599999268846
+  }
+ ],
+ "steps": [
+  {
+   "technique": "create staging directory",
+   "tactic": "collection",
+   "pid": 4437,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 1
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 7633,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 11179,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 14421,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 18197,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 21578,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 25165,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 28350,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 31272,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 34890,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 37937,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 40759,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 44856,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find files",
+   "tactic": "collection",
+   "pid": 47568,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "stage sensitive files",
+   "tactic": "collection",
+   "pid": 50511,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "stage sensitive files",
+   "tactic": "collection",
+   "pid": 53148,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "stage sensitive files",
+   "tactic": "collection",
+   "pid": 56158,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "advanced file search and stager",
+   "tactic": "collection",
+   "pid": 59405,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "advanced file search and stager",
+   "tactic": "collection",
+   "pid": 64528,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "stage sensitive files",
+   "tactic": "collection",
+   "pid": 71772,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "stage sensitive files",
+   "tactic": "collection",
+   "pid": 75625,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "stage sensitive files",
+   "tactic": "collection",
+   "pid": 78245,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "compress staged directory",
+   "tactic": "exfiltration",
+   "pid": 82035,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "compress staged directory",
+   "tactic": "exfiltration",
+   "pid": 85807,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "exfil staged directory",
+   "tactic": "exfiltration",
+   "pid": 89730,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "linux download file and run",
+   "tactic": "command and control",
+   "pid": 92385,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "add command",
+   "tactic": "command and control",
+   "pid": 94961,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "find local users",
+   "tactic": "discovery",
+   "pid": 98270,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "network interface configuration",
+   "tactic": "discovery",
+   "pid": 101566,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "scan wifi networks",
+   "tactic": "discovery",
+   "pid": 105454,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "system owner/user discovery",
+   "tactic": "discovery",
+   "pid": 108683,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "check python",
+   "tactic": "discovery",
+   "pid": 111519,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "permission groups discovery",
+   "tactic": "discovery",
+   "pid": 114311,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "list os information",
+   "tactic": "discovery",
+   "pid": 117576,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "list directory",
+   "tactic": "discovery",
+   "pid": 120442,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "create a new user in linux",
+   "tactic": "persistence",
+   "pid": 123479,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "extract password with grep",
+   "tactic": "credential access",
+   "pid": 128298,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "download sandcat and lazagne",
+   "tactic": "command and control",
+   "pid": 131906,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "dump credentials from firefox browser",
+   "tactic": "credential access",
+   "pid": 135354,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "dump credentials from firefox browser",
+   "tactic": "credential access",
+   "pid": 138106,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "capture linux desktop",
+   "tactic": "collection",
+   "pid": 141900,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "add or copy content to clipboard",
+   "tactic": "collection",
+   "pid": 144446,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "dump history",
+   "tactic": "credential access",
+   "pid": 147357,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "collect arp details",
+   "tactic": "discovery",
+   "pid": 149940,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "start sandcat",
+   "tactic": "lateral movement",
+   "pid": 152566,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 0
+  },
+  {
+   "technique": "capture linux desktop",
+   "tactic": "cleanup",
+   "pid": 181541,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 22
+  },
+  {
+   "technique": "dump credentials from firefox",
+   "tactic": "cleanup",
+   "pid": 181543,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 20
+  },
+  {
+   "technique": "dump credentials from firefox",
+   "tactic": "cleanup",
+   "pid": 181545,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 18
+  },
+  {
+   "technique": "download sandcat and lazagne",
+   "tactic": "cleanup",
+   "pid": 181547,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 16
+  },
+  {
+   "technique": "create a new user in linux",
+   "tactic": "cleanup",
+   "pid": 181552,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 15
+  },
+  {
+   "technique": "list os information",
+   "tactic": "cleanup",
+   "pid": 181557,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 13
+  },
+  {
+   "technique": "add command",
+   "tactic": "cleanup",
+   "pid": 181561,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 11
+  },
+  {
+   "technique": "linux download file",
+   "tactic": "cleanup",
+   "pid": 181564,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 9
+  },
+  {
+   "technique": "compress staged directory",
+   "tactic": "cleanup",
+   "pid": 181566,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 8
+  },
+  {
+   "technique": "compress staged directory",
+   "tactic": "cleanup",
+   "pid": 181569,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 6
+  },
+  {
+   "technique": "advanced file search and stager",
+   "tactic": "cleanup",
+   "pid": 181572,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 4
+  },
+  {
+   "technique": "advanced file search and stager",
+   "tactic": "cleanup",
+   "pid": 181576,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 2
+  },
+  {
+   "technique": "create staging directory",
+   "tactic": "cleanup",
+   "pid": 181578,
+   "pid_is_recorded_process": true,
+   "pid_is_labelled_attack": true,
+   "labelled_attack_pids_within_40_pids_and_10_min": 1
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "rolling5_exclude_staging": {
+  "requested": "gpt-4o-mini",
+  "backend": null,
+  "argv_no_think": false,
+  "returned": null,
+  "parse_failures": null,
+  "errors": null
+ },
+ "rolling5_allbenign_exclude_staging": {
+  "requested": "gpt-4o-mini",
+  "backend": "responses",
+  "argv_no_think": false,
+  "returned": {
+   "narrative": {
+    "gpt-4o-mini-2024-07-18": 5403,
+    "": 563
+   },
+   "context": {
+    "gpt-4o-mini-2024-07-18": 5403,
+    "": 563
+   },
+   "agent": {
+    "gpt-4o-mini-2024-07-18": 5403,
+    "": 563
+   }
+  },
+  "parse_failures": {
+   "narrative": 0,
+   "context": 0,
+   "agent": 0
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0,
+   "agent": 0
+  }
+ },
+ "rolling5_exclude_staging_m-qwen3-4b-instruct-2507": {
+  "requested": "Qwen/Qwen3-4B-Instruct-2507:nscale",
+  "backend": "chat",
+  "argv_no_think": false,
+  "returned": {
+   "narrative": {
+    "Qwen/Qwen3-4B-Instruct-2507": 846
+   },
+   "context": {
+    "Qwen/Qwen3-4B-Instruct-2507": 846
+   },
+   "agent": {
+    "Qwen/Qwen3-4B-Instruct-2507": 846
+   }
+  },
+  "parse_failures": {
+   "narrative": 0,
+   "context": 1,
+   "agent": 0
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0,
+   "agent": 0
+  }
+ },
+ "rolling5_allbenign_exclude_staging_m-qwen3-4b-instruct-2507": {
+  "requested": "Qwen/Qwen3-4B-Instruct-2507:nscale",
+  "backend": "chat",
+  "argv_no_think": false,
+  "returned": {
+   "narrative": {
+    "Qwen/Qwen3-4B-Instruct-2507": 5966
+   },
+   "context": {
+    "Qwen/Qwen3-4B-Instruct-2507": 5966
+   }
+  },
+  "parse_failures": {
+   "narrative": 0,
+   "context": 1
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0
+  }
+ },
+ "rolling5_exclude_staging_m-qwen3-8b": {
+  "requested": "Qwen/Qwen3-8B:nscale",
+  "backend": "chat",
+  "argv_no_think": true,
+  "returned": {
+   "narrative": {
+    "Qwen/Qwen3-8B": 846
+   },
+   "context": {
+    "Qwen/Qwen3-8B": 846
+   },
+   "agent": {
+    "Qwen/Qwen3-8B": 846
+   }
+  },
+  "parse_failures": {
+   "narrative": 1,
+   "context": 0,
+   "agent": 0
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0,
+   "agent": 0
+  }
+ },
+ "rolling5_allbenign_exclude_staging_m-qwen3-8b": {
+  "requested": "Qwen/Qwen3-8B:nscale",
+  "backend": "chat",
+  "argv_no_think": true,
+  "returned": {
+   "narrative": {
+    "Qwen/Qwen3-8B": 5966
+   },
+   "context": {
+    "Qwen/Qwen3-8B": 5966
+   }
+  },
+  "parse_failures": {
+   "narrative": 1,
+   "context": 0
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0
+  }
+ },
+ "rolling5_exclude_staging_m-llama-3.1-8b-instruct": {
+  "requested": "meta-llama/Llama-3.1-8B-Instruct:deepinfra",
+  "backend": "chat",
+  "argv_no_think": false,
+  "returned": {
+   "narrative": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": 846
+   },
+   "context": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": 846
+   },
+   "agent": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": 846
+   }
+  },
+  "parse_failures": {
+   "narrative": 1,
+   "context": 6,
+   "agent": 3
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0,
+   "agent": 0
+  }
+ },
+ "rolling5_allbenign_exclude_staging_m-llama-3.1-8b-instruct": {
+  "requested": "meta-llama/Llama-3.1-8B-Instruct:deepinfra",
+  "backend": "chat",
+  "argv_no_think": false,
+  "returned": {
+   "narrative": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": 5966
+   },
+   "context": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": 5966
+   }
+  },
+  "parse_failures": {
+   "narrative": 21,
+   "context": 26
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0
+  }
+ },
+ "rolling5_exclude_staging_m-gemma-3-4b-it": {
+  "requested": "google/gemma-3-4b-it:deepinfra",
+  "backend": "chat",
+  "argv_no_think": false,
+  "returned": {
+   "narrative": {
+    "google/gemma-3-4b-it": 846
+   },
+   "context": {
+    "google/gemma-3-4b-it": 846
+   },
+   "agent": {
+    "google/gemma-3-4b-it": 846
+   }
+  },
+  "parse_failures": {
+   "narrative": 21,
+   "context": 20,
+   "agent": 14
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0,
+   "agent": 0
+  }
+ },
+ "rolling5_allbenign_exclude_staging_m-gemma-3-4b-it": {
+  "requested": "google/gemma-3-4b-it:deepinfra",
+  "backend": "chat",
+  "argv_no_think": false,
+  "returned": {
+   "narrative": {
+    "google/gemma-3-4b-it": 5966
+   },
+   "context": {
+    "google/gemma-3-4b-it": 5966
+   }
+  },
+  "parse_failures": {
+   "narrative": 83,
+   "context": 98
+  },
+  "errors": {
+   "narrative": 0,
+   "context": 0
+  }
+ }
+}

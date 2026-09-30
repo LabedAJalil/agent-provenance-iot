@@ -1,0 +1,16 @@
+{
+ "caldera_step_pids": 58,
+ "step_pids_labelled_attack": 58,
+ "step_pid_parents": {
+  "4127": 58
+ },
+ "labelled_attack_pids": 110,
+ "labelled_attack_pids_not_in_report": 52,
+ "recorded_descendants_of_step_pids": 51,
+ "recorded_descendants_labelled_attack": 51,
+ "recorded_descendants_labelled_benign": 0,
+ "labelled_attack_pids_neither_step_nor_descendant": [
+  4133
+ ],
+ "reading": "shipped label == Caldera step pid OR recorded descendant of one; a process whose parent chain is not recorded cannot inherit the label"
+}

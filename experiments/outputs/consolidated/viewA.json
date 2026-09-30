@@ -1,0 +1,6049 @@
+{
+ "view": "A",
+ "folds": "count",
+ "min_flag": 3,
+ "n": 3554,
+ "n_attack": 97,
+ "n_lineage_clusters_attack": 46,
+ "n_hour_blocks": 61,
+ "detectors": {
+  "forest@0.5": {
+   "n": 3554,
+   "tp": 68,
+   "fp": 0,
+   "fn": 29,
+   "precision": 1.0,
+   "recall": 0.7010309278350515,
+   "f1": 0.8242424242424242,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7319794584500466,
+    0.9028663594470047
+   ],
+   "recall_ci_cluster": [
+    0.5772615979381442,
+    0.8229319852941176
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.6467646795960318,
+    0.975
+   ]
+  },
+  "forest@oobf1": {
+   "n": 3554,
+   "tp": 68,
+   "fp": 0,
+   "fn": 29,
+   "precision": 1.0,
+   "recall": 0.7010309278350515,
+   "f1": 0.8242424242424242,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7175493550934456,
+    0.9036229664420393
+   ],
+   "recall_ci_cluster": [
+    0.5595142089093702,
+    0.8241899852724595
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.5999171270718232,
+    0.9883754343758353
+   ]
+  },
+  "forest": {
+   "n": 3554,
+   "tp": 85,
+   "fp": 35,
+   "fn": 12,
+   "precision": 0.7083333333333334,
+   "recall": 0.8762886597938144,
+   "f1": 0.7834101382488479,
+   "fp_per_1000": 10.1243853051779,
+   "f1_ci_cluster": [
+    0.7102803738317757,
+    0.84215354901014
+   ],
+   "recall_ci_cluster": [
+    0.7754851940776311,
+    0.9509803921568627
+   ],
+   "fp_per_1000_ci_cluster": [
+    6.835016099284957,
+    14.152739636059273
+   ],
+   "f1_ci_hourblock": [
+    0.7141917293233083,
+    0.8288973384030418
+   ]
+  },
+  "signature-rule": {
+   "n": 3554,
+   "tp": 75,
+   "fp": 33,
+   "fn": 22,
+   "precision": 0.6944444444444444,
+   "recall": 0.7731958762886598,
+   "f1": 0.7317073170731706,
+   "fp_per_1000": 9.545849002024877,
+   "f1_ci_cluster": [
+    0.6242645796371545,
+    0.8173730842911877
+   ],
+   "recall_ci_cluster": [
+    0.6428571428571429,
+    0.8791208791208791
+   ],
+   "fp_per_1000_ci_cluster": [
+    6.446716342709588,
+    13.617405430733307
+   ],
+   "f1_ci_hourblock": [
+    0.5687930607187113,
+    0.8411460895228725
+   ]
+  },
+  "gpt-4o-mini/narrative": {
+   "n": 3554,
+   "tp": 61,
+   "fp": 34,
+   "fn": 36,
+   "precision": 0.6421052631578947,
+   "recall": 0.6288659793814433,
+   "f1": 0.6354166666666667,
+   "fp_per_1000": 9.835117153601388,
+   "f1_ci_cluster": [
+    0.5660331339162448,
+    0.7142857142857143
+   ],
+   "recall_ci_cluster": [
+    0.5514018691588785,
+    0.7108557943112657
+   ],
+   "fp_per_1000_ci_cluster": [
+    5.864572888315905,
+    14.300196939052935
+   ],
+   "f1_ci_hourblock": [
+    0.5024497487437185,
+    0.7619411123227917
+   ]
+  },
+  "gpt-4o-mini/stack-narrative": {
+   "n": 3554,
+   "tp": 70,
+   "fp": 0,
+   "fn": 27,
+   "precision": 1.0,
+   "recall": 0.7216494845360825,
+   "f1": 0.8383233532934131,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7692090395480227,
+    0.9000130890052356
+   ],
+   "recall_ci_cluster": [
+    0.6249713302752293,
+    0.8182034632034633
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.7692052980132451,
+    0.9222997210043842
+   ]
+  },
+  "gpt-4o-mini/context": {
+   "n": 3554,
+   "tp": 85,
+   "fp": 78,
+   "fn": 12,
+   "precision": 0.5214723926380368,
+   "recall": 0.8762886597938144,
+   "f1": 0.6538461538461539,
+   "fp_per_1000": 22.56291582296789,
+   "f1_ci_cluster": [
+    0.5746054563249328,
+    0.7218149540517962
+   ],
+   "recall_ci_cluster": [
+    0.7884615384615384,
+    0.9439382139148494
+   ],
+   "fp_per_1000_ci_cluster": [
+    16.905046963412723,
+    28.952095478110554
+   ],
+   "f1_ci_hourblock": [
+    0.5899932386747803,
+    0.7040561250125615
+   ]
+  },
+  "gpt-4o-mini/stack-context": {
+   "n": 3554,
+   "tp": 76,
+   "fp": 0,
+   "fn": 21,
+   "precision": 1.0,
+   "recall": 0.7835051546391752,
+   "f1": 0.8786127167630058,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.8079406520631687,
+    0.936176362071086
+   ],
+   "recall_ci_cluster": [
+    0.6777688172043012,
+    0.8800108695652173
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.7894483805668017,
+    0.9756195121951219
+   ]
+  },
+  "gpt-4o-mini/agent": {
+   "n": 3554,
+   "tp": 93,
+   "fp": 126,
+   "fn": 4,
+   "precision": 0.4246575342465753,
+   "recall": 0.9587628865979382,
+   "f1": 0.5886075949367088,
+   "fp_per_1000": 36.44778709864044,
+   "f1_ci_cluster": [
+    0.5277755157437568,
+    0.6520476527257435
+   ],
+   "recall_ci_cluster": [
+    0.9129951690821255,
+    0.9903869047619048
+   ],
+   "fp_per_1000_ci_cluster": [
+    28.988304082290515,
+    45.22662492791828
+   ],
+   "f1_ci_hourblock": [
+    0.5094696737397277,
+    0.6617025417132028
+   ]
+  },
+  "gpt-4o-mini/stack-agent": {
+   "n": 3554,
+   "tp": 80,
+   "fp": 0,
+   "fn": 17,
+   "precision": 1.0,
+   "recall": 0.8247422680412371,
+   "f1": 0.903954802259887,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.8414977204384517,
+    0.9528893673239712
+   ],
+   "recall_ci_cluster": [
+    0.7263669618790912,
+    0.9100178571428572
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.8285548172757474,
+    0.9883754343758353
+   ]
+  },
+  "gpt-4o-mini/sweep": {
+   "n": 1247,
+   "tp": 52,
+   "fp": 44,
+   "fn": 4,
+   "precision": 0.5416666666666666,
+   "recall": 0.9285714285714286,
+   "f1": 0.6842105263157894,
+   "fp_per_1000": 36.94374475230899,
+   "f1_ci_cluster": [
+    0.6075949367088608,
+    0.756792086203851
+   ],
+   "recall_ci_cluster": [
+    0.86,
+    0.9833333333333333
+   ],
+   "fp_per_1000_ci_cluster": [
+    25.511722362971003,
+    52.6780471456758
+   ],
+   "f1_ci_hourblock": [
+    0.6257476993865031,
+    0.7421477799118744
+   ]
+  },
+  "gpt-4o-mini/stack-sweep": {
+   "n": 1247,
+   "tp": 45,
+   "fp": 0,
+   "fn": 11,
+   "precision": 1.0,
+   "recall": 0.8035714285714286,
+   "f1": 0.8910891089108911,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7959128812815449,
+    0.9620312873178888
+   ],
+   "recall_ci_cluster": [
+    0.6610093825665859,
+    0.9268403547671841
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.7956084318109231,
+    0.9612403100775194
+   ]
+  },
+  "qwen3-4b/narrative": {
+   "n": 3554,
+   "tp": 71,
+   "fp": 153,
+   "fn": 26,
+   "precision": 0.3169642857142857,
+   "recall": 0.7319587628865979,
+   "f1": 0.4423676012461059,
+   "fp_per_1000": 44.25802719120625,
+   "f1_ci_cluster": [
+    0.33539911654104476,
+    0.5737940456001508
+   ],
+   "recall_ci_cluster": [
+    0.6597463374932175,
+    0.8144425353188239
+   ],
+   "fp_per_1000_ci_cluster": [
+    25.973298002445986,
+    67.3552697010127
+   ],
+   "f1_ci_hourblock": [
+    0.27110129009830997,
+    0.7046936909478818
+   ]
+  },
+  "qwen3-4b/context": {
+   "n": 3554,
+   "tp": 91,
+   "fp": 158,
+   "fn": 6,
+   "precision": 0.3654618473895582,
+   "recall": 0.9381443298969072,
+   "f1": 0.5260115606936416,
+   "fp_per_1000": 45.704367949088805,
+   "f1_ci_cluster": [
+    0.44277963630125244,
+    0.6258735973021687
+   ],
+   "recall_ci_cluster": [
+    0.8823529411764706,
+    0.9888978494623656
+   ],
+   "fp_per_1000_ci_cluster": [
+    33.53592046111926,
+    59.17578030029113
+   ],
+   "f1_ci_hourblock": [
+    0.32904934125548957,
+    0.8000389105058365
+   ]
+  },
+  "qwen3-4b/sweep": {
+   "n": 3554,
+   "tp": 90,
+   "fp": 100,
+   "fn": 7,
+   "precision": 0.47368421052631576,
+   "recall": 0.9278350515463918,
+   "f1": 0.627177700348432,
+   "fp_per_1000": 28.926815157651145,
+   "f1_ci_cluster": [
+    0.535593220338983,
+    0.7239330482817231
+   ],
+   "recall_ci_cluster": [
+    0.8763693820224719,
+    0.9732142857142857
+   ],
+   "fp_per_1000_ci_cluster": [
+    19.876386942174037,
+    38.998486964618245
+   ],
+   "f1_ci_hourblock": [
+    0.42161693820495516,
+    0.8889210019267821
+   ]
+  },
+  "qwen3-8b/narrative": {
+   "n": 3554,
+   "tp": 54,
+   "fp": 262,
+   "fn": 43,
+   "precision": 0.17088607594936708,
+   "recall": 0.5567010309278351,
+   "f1": 0.261501210653753,
+   "fp_per_1000": 75.788255713046,
+   "f1_ci_cluster": [
+    0.2012440207281424,
+    0.3314285714285714
+   ],
+   "recall_ci_cluster": [
+    0.4767414692458161,
+    0.6404494382022472
+   ],
+   "fp_per_1000_ci_cluster": [
+    57.21488118704294,
+    97.5236614629843
+   ],
+   "f1_ci_hourblock": [
+    0.17599672801635993,
+    0.39146372058017337
+   ]
+  },
+  "qwen3-8b/context": {
+   "n": 3554,
+   "tp": 82,
+   "fp": 541,
+   "fn": 15,
+   "precision": 0.13162118780096307,
+   "recall": 0.845360824742268,
+   "f1": 0.22777777777777777,
+   "fp_per_1000": 156.49407000289267,
+   "f1_ci_cluster": [
+    0.17556495880795064,
+    0.28866957634133494
+   ],
+   "recall_ci_cluster": [
+    0.7659443131074337,
+    0.9108965896589659
+   ],
+   "fp_per_1000_ci_cluster": [
+    125.14386554514145,
+    190.49784161958937
+   ],
+   "f1_ci_hourblock": [
+    0.13284764322788462,
+    0.4000431965442764
+   ]
+  },
+  "llama-3.1-8b/narrative": {
+   "n": 3554,
+   "tp": 70,
+   "fp": 1940,
+   "fn": 27,
+   "precision": 0.03482587064676617,
+   "recall": 0.7216494845360825,
+   "f1": 0.0664451827242525,
+   "fp_per_1000": 561.1802140584322,
+   "f1_ci_cluster": [
+    0.05284353346210248,
+    0.08594957285650053
+   ],
+   "recall_ci_cluster": [
+    0.6463744588744589,
+    0.7959233207846245
+   ],
+   "fp_per_1000_ci_cluster": [
+    528.823978606367,
+    593.1364256738825
+   ],
+   "f1_ci_hourblock": [
+    0.03764070787470705,
+    0.12466843117387975
+   ]
+  },
+  "llama-3.1-8b/context": {
+   "n": 3554,
+   "tp": 95,
+   "fp": 2818,
+   "fn": 2,
+   "precision": 0.032612427051150014,
+   "recall": 0.979381443298969,
+   "f1": 0.06312292358803986,
+   "fp_per_1000": 815.1576511426092,
+   "f1_ci_cluster": [
+    0.05118396956485781,
+    0.07859734130329081
+   ],
+   "recall_ci_cluster": [
+    0.9444444444444444,
+    1.0
+   ],
+   "fp_per_1000_ci_cluster": [
+    788.1575364876306,
+    843.8094266500575
+   ],
+   "f1_ci_hourblock": [
+    0.03671004186985787,
+    0.11262527938049582
+   ]
+  },
+  "gemma-3-4b/narrative": {
+   "n": 3554,
+   "tp": 49,
+   "fp": 954,
+   "fn": 48,
+   "precision": 0.04885343968095713,
+   "recall": 0.5051546391752577,
+   "f1": 0.0890909090909091,
+   "fp_per_1000": 275.9618166039919,
+   "f1_ci_cluster": [
+    0.0639562658902649,
+    0.12081102855012252
+   ],
+   "recall_ci_cluster": [
+    0.3894590643274854,
+    0.6161190810593901
+   ],
+   "fp_per_1000_ci_cluster": [
+    240.99332864482602,
+    310.0285323002664
+   ],
+   "f1_ci_hourblock": [
+    0.05475388607354153,
+    0.14224310425432446
+   ]
+  },
+  "gemma-3-4b/context": {
+   "n": 3554,
+   "tp": 87,
+   "fp": 1821,
+   "fn": 10,
+   "precision": 0.04559748427672956,
+   "recall": 0.8969072164948454,
+   "f1": 0.08678304239401496,
+   "fp_per_1000": 526.7573040208273,
+   "f1_ci_cluster": [
+    0.06893365763142599,
+    0.11080955772860626
+   ],
+   "recall_ci_cluster": [
+    0.8369565217391305,
+    0.9489795918367347
+   ],
+   "fp_per_1000_ci_cluster": [
+    465.1080580494902,
+    585.7769174283774
+   ],
+   "f1_ci_hourblock": [
+    0.04795806359036032,
+    0.16260724588812708
+   ]
+  }
+ },
+ "detectors_filtered": {
+  "forest@0.5": {
+   "n": 3554,
+   "tp": 68,
+   "fp": 0,
+   "fn": 29,
+   "precision": 1.0,
+   "recall": 0.7010309278350515,
+   "f1": 0.8242424242424242,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7319794584500466,
+    0.9028663594470047
+   ],
+   "recall_ci_cluster": [
+    0.5772615979381442,
+    0.8229319852941176
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.6467646795960318,
+    0.975
+   ]
+  },
+  "forest@oobf1": {
+   "n": 3554,
+   "tp": 68,
+   "fp": 0,
+   "fn": 29,
+   "precision": 1.0,
+   "recall": 0.7010309278350515,
+   "f1": 0.8242424242424242,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7175493550934456,
+    0.9036229664420393
+   ],
+   "recall_ci_cluster": [
+    0.5595142089093702,
+    0.8241899852724595
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.5999171270718232,
+    0.9883754343758353
+   ]
+  },
+  "forest": {
+   "n": 3554,
+   "tp": 85,
+   "fp": 8,
+   "fn": 12,
+   "precision": 0.9139784946236559,
+   "recall": 0.8762886597938144,
+   "f1": 0.894736842105263,
+   "fp_per_1000": 2.3141452126120914,
+   "f1_ci_cluster": [
+    0.8341499162479062,
+    0.9453003276301419
+   ],
+   "recall_ci_cluster": [
+    0.7754851940776311,
+    0.9509803921568627
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.8550729686190163,
+    4.075291031159428
+   ],
+   "f1_ci_hourblock": [
+    0.8219055772994128,
+    0.9638766832034018
+   ]
+  },
+  "signature-rule": {
+   "n": 3554,
+   "tp": 75,
+   "fp": 6,
+   "fn": 22,
+   "precision": 0.9259259259259259,
+   "recall": 0.7731958762886598,
+   "f1": 0.8426966292134831,
+   "fp_per_1000": 1.7356089094590685,
+   "f1_ci_cluster": [
+    0.7407287157287157,
+    0.9111143984220909
+   ],
+   "recall_ci_cluster": [
+    0.6428571428571429,
+    0.8791208791208791
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.5383471482446531,
+    3.274403985188313
+   ],
+   "f1_ci_hourblock": [
+    0.6299758064516129,
+    0.9861158675799088
+   ]
+  },
+  "gpt-4o-mini/narrative": {
+   "n": 3554,
+   "tp": 61,
+   "fp": 11,
+   "fn": 36,
+   "precision": 0.8472222222222222,
+   "recall": 0.6288659793814433,
+   "f1": 0.7218934911242603,
+   "fp_per_1000": 3.181949667341626,
+   "f1_ci_cluster": [
+    0.6519210734017364,
+    0.7956989247311828
+   ],
+   "recall_ci_cluster": [
+    0.5514018691588785,
+    0.7108557943112657
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.683535762483131,
+    6.457910198947647
+   ],
+   "f1_ci_hourblock": [
+    0.6351188257222741,
+    0.7931340180973343
+   ]
+  },
+  "gpt-4o-mini/stack-narrative": {
+   "n": 3554,
+   "tp": 70,
+   "fp": 0,
+   "fn": 27,
+   "precision": 1.0,
+   "recall": 0.7216494845360825,
+   "f1": 0.8383233532934131,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7692090395480227,
+    0.9000130890052356
+   ],
+   "recall_ci_cluster": [
+    0.6249713302752293,
+    0.8182034632034633
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.7692052980132451,
+    0.9222997210043842
+   ]
+  },
+  "gpt-4o-mini/context": {
+   "n": 3554,
+   "tp": 85,
+   "fp": 5,
+   "fn": 12,
+   "precision": 0.9444444444444444,
+   "recall": 0.8762886597938144,
+   "f1": 0.9090909090909091,
+   "fp_per_1000": 1.4463407578825573,
+   "f1_ci_cluster": [
+    0.841519840661866,
+    0.9604602858092389
+   ],
+   "recall_ci_cluster": [
+    0.7884615384615384,
+    0.9439382139148494
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    4.33527130395244
+   ],
+   "f1_ci_hourblock": [
+    0.8512352734306313,
+    0.9777858880778589
+   ]
+  },
+  "gpt-4o-mini/stack-context": {
+   "n": 3554,
+   "tp": 76,
+   "fp": 0,
+   "fn": 21,
+   "precision": 1.0,
+   "recall": 0.7835051546391752,
+   "f1": 0.8786127167630058,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.8079406520631687,
+    0.936176362071086
+   ],
+   "recall_ci_cluster": [
+    0.6777688172043012,
+    0.8800108695652173
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.7894483805668017,
+    0.9756195121951219
+   ]
+  },
+  "gpt-4o-mini/agent": {
+   "n": 3554,
+   "tp": 93,
+   "fp": 8,
+   "fn": 4,
+   "precision": 0.9207920792079208,
+   "recall": 0.9587628865979382,
+   "f1": 0.9393939393939394,
+   "fp_per_1000": 2.3141452126120914,
+   "f1_ci_cluster": [
+    0.8775194613928047,
+    0.9853693884764936
+   ],
+   "recall_ci_cluster": [
+    0.9129951690821255,
+    0.9903869047619048
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    5.832319891243429
+   ],
+   "f1_ci_hourblock": [
+    0.8811822253653936,
+    1.0
+   ]
+  },
+  "gpt-4o-mini/stack-agent": {
+   "n": 3554,
+   "tp": 80,
+   "fp": 0,
+   "fn": 17,
+   "precision": 1.0,
+   "recall": 0.8247422680412371,
+   "f1": 0.903954802259887,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.8414977204384517,
+    0.9528893673239712
+   ],
+   "recall_ci_cluster": [
+    0.7263669618790912,
+    0.9100178571428572
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.8285548172757474,
+    0.9883754343758353
+   ]
+  },
+  "gpt-4o-mini/sweep": {
+   "n": 1247,
+   "tp": 52,
+   "fp": 2,
+   "fn": 4,
+   "precision": 0.9629629629629629,
+   "recall": 0.9285714285714286,
+   "f1": 0.9454545454545454,
+   "fp_per_1000": 1.6792611251049538,
+   "f1_ci_cluster": [
+    0.9009009009009009,
+    0.9824561403508771
+   ],
+   "recall_ci_cluster": [
+    0.86,
+    0.9833333333333333
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    4.35996335058897
+   ],
+   "f1_ci_hourblock": [
+    0.9032115329717384,
+    0.9850801141352062
+   ]
+  },
+  "gpt-4o-mini/stack-sweep": {
+   "n": 1247,
+   "tp": 45,
+   "fp": 0,
+   "fn": 11,
+   "precision": 1.0,
+   "recall": 0.8035714285714286,
+   "f1": 0.8910891089108911,
+   "fp_per_1000": 0.0,
+   "f1_ci_cluster": [
+    0.7959128812815449,
+    0.9620312873178888
+   ],
+   "recall_ci_cluster": [
+    0.6610093825665859,
+    0.9268403547671841
+   ],
+   "fp_per_1000_ci_cluster": [
+    0.0,
+    0.0
+   ],
+   "f1_ci_hourblock": [
+    0.7956084318109231,
+    0.9612403100775194
+   ]
+  },
+  "qwen3-4b/narrative": {
+   "n": 3554,
+   "tp": 71,
+   "fp": 71,
+   "fn": 26,
+   "precision": 0.5,
+   "recall": 0.7319587628865979,
+   "f1": 0.5941422594142258,
+   "fp_per_1000": 20.53803876193231,
+   "f1_ci_cluster": [
+    0.42490215264187864,
+    0.7816542189734625
+   ],
+   "recall_ci_cluster": [
+    0.6597463374932175,
+    0.8144425353188239
+   ],
+   "fp_per_1000_ci_cluster": [
+    5.24472630579259,
+    44.980012087782214
+   ],
+   "f1_ci_hourblock": [
+    0.40137323943661973,
+    0.797108553566354
+   ]
+  },
+  "qwen3-4b/context": {
+   "n": 3554,
+   "tp": 91,
+   "fp": 23,
+   "fn": 6,
+   "precision": 0.7982456140350878,
+   "recall": 0.9381443298969072,
+   "f1": 0.8625592417061612,
+   "fp_per_1000": 6.653167486259763,
+   "f1_ci_cluster": [
+    0.8035714285714286,
+    0.9238578680203046
+   ],
+   "recall_ci_cluster": [
+    0.8823529411764706,
+    0.9888978494623656
+   ],
+   "fp_per_1000_ci_cluster": [
+    3.3359786292281592,
+    10.718937969173723
+   ],
+   "f1_ci_hourblock": [
+    0.7221994535519125,
+    0.9521089572745783
+   ]
+  },
+  "qwen3-4b/sweep": {
+   "n": 3554,
+   "tp": 90,
+   "fp": 35,
+   "fn": 7,
+   "precision": 0.72,
+   "recall": 0.9278350515463918,
+   "f1": 0.8108108108108107,
+   "fp_per_1000": 10.1243853051779,
+   "f1_ci_cluster": [
+    0.7500000000000001,
+    0.8664035087719298
+   ],
+   "recall_ci_cluster": [
+    0.8763693820224719,
+    0.9732142857142857
+   ],
+   "fp_per_1000_ci_cluster": [
+    6.7276294275338895,
+    13.450959460602915
+   ],
+   "f1_ci_hourblock": [
+    0.6934081401773265,
+    0.9035231660231661
+   ]
+  },
+  "qwen3-8b/narrative": {
+   "n": 3554,
+   "tp": 54,
+   "fp": 75,
+   "fn": 43,
+   "precision": 0.4186046511627907,
+   "recall": 0.5567010309278351,
+   "f1": 0.47787610619469023,
+   "fp_per_1000": 21.695111368238354,
+   "f1_ci_cluster": [
+    0.3406841188379867,
+    0.6327961470778919
+   ],
+   "recall_ci_cluster": [
+    0.4767414692458161,
+    0.6404494382022472
+   ],
+   "fp_per_1000_ci_cluster": [
+    7.340158100372535,
+    44.63870298087537
+   ],
+   "f1_ci_hourblock": [
+    0.32915723501782584,
+    0.6760780065005416
+   ]
+  },
+  "qwen3-8b/context": {
+   "n": 3554,
+   "tp": 82,
+   "fp": 53,
+   "fn": 15,
+   "precision": 0.6074074074074074,
+   "recall": 0.845360824742268,
+   "f1": 0.706896551724138,
+   "fp_per_1000": 15.331212033555104,
+   "f1_ci_cluster": [
+    0.5714285714285714,
+    0.8219282386482163
+   ],
+   "recall_ci_cluster": [
+    0.7659443131074337,
+    0.9108965896589659
+   ],
+   "fp_per_1000_ci_cluster": [
+    6.898603662005412,
+    27.30487705338876
+   ],
+   "f1_ci_hourblock": [
+    0.5493441221078447,
+    0.854371211085282
+   ]
+  },
+  "llama-3.1-8b/narrative": {
+   "n": 3554,
+   "tp": 70,
+   "fp": 349,
+   "fn": 27,
+   "precision": 0.16706443914081145,
+   "recall": 0.7216494845360825,
+   "f1": 0.2713178294573643,
+   "fp_per_1000": 100.95458490020248,
+   "f1_ci_cluster": [
+    0.20146036801132342,
+    0.36364710939179024
+   ],
+   "recall_ci_cluster": [
+    0.6463744588744589,
+    0.7959233207846245
+   ],
+   "fp_per_1000_ci_cluster": [
+    68.46924203532681,
+    140.15248700657187
+   ],
+   "f1_ci_hourblock": [
+    0.14045564082678205,
+    0.5358319683977262
+   ]
+  },
+  "llama-3.1-8b/context": {
+   "n": 3554,
+   "tp": 92,
+   "fp": 423,
+   "fn": 5,
+   "precision": 0.1786407766990291,
+   "recall": 0.9484536082474226,
+   "f1": 0.3006535947712418,
+   "fp_per_1000": 122.36042811686433,
+   "f1_ci_cluster": [
+    0.21780817479653725,
+    0.4051732149724394
+   ],
+   "recall_ci_cluster": [
+    0.891274486383182,
+    0.9901960784313726
+   ],
+   "fp_per_1000_ci_cluster": [
+    81.76343858162039,
+    173.60593224896027
+   ],
+   "f1_ci_hourblock": [
+    0.1467191744012085,
+    0.6209714986976558
+   ]
+  },
+  "gemma-3-4b/narrative": {
+   "n": 3554,
+   "tp": 49,
+   "fp": 121,
+   "fn": 48,
+   "precision": 0.28823529411764703,
+   "recall": 0.5051546391752577,
+   "f1": 0.3670411985018726,
+   "fp_per_1000": 35.00144634075789,
+   "f1_ci_cluster": [
+    0.23574993490148424,
+    0.5438995215311004
+   ],
+   "recall_ci_cluster": [
+    0.3894590643274854,
+    0.6161190810593901
+   ],
+   "fp_per_1000_ci_cluster": [
+    12.751440158861842,
+    66.69512703636326
+   ],
+   "f1_ci_hourblock": [
+    0.22649219174144924,
+    0.542047679948843
+   ]
+  },
+  "gemma-3-4b/context": {
+   "n": 3554,
+   "tp": 86,
+   "fp": 220,
+   "fn": 11,
+   "precision": 0.28104575163398693,
+   "recall": 0.8865979381443299,
+   "f1": 0.4267990074441688,
+   "fp_per_1000": 63.638993346832514,
+   "f1_ci_cluster": [
+    0.2904638988928012,
+    0.612846369096369
+   ],
+   "recall_ci_cluster": [
+    0.8191489361702128,
+    0.9428652597402597
+   ],
+   "fp_per_1000_ci_cluster": [
+    30.600364393160532,
+    112.90734239855496
+   ],
+   "f1_ci_hourblock": [
+    0.23615183870469883,
+    0.7160692951015531
+   ]
+  }
+ },
+ "filter_lists": {
+  "forest@0.5": {},
+  "forest@oobf1": {},
+  "forest": {
+   "2": [
+    "base64<-UNKNOWN"
+   ],
+   "3": [
+    "base64<-UNKNOWN"
+   ],
+   "4": [
+    "base64<-UNKNOWN"
+   ],
+   "5": [
+    "base64<-UNKNOWN"
+   ]
+  },
+  "signature-rule": {
+   "2": [
+    "base64<-UNKNOWN"
+   ],
+   "3": [
+    "base64<-UNKNOWN"
+   ],
+   "4": [
+    "base64<-UNKNOWN"
+   ],
+   "5": [
+    "base64<-UNKNOWN"
+   ]
+  },
+  "gpt-4o-mini/narrative": {
+   "1": [
+    "chmod<-apt-key",
+    "rm<-apt-key"
+   ],
+   "2": [
+    "chmod<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg"
+   ],
+   "3": [
+    "chmod<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg"
+   ],
+   "4": [
+    "chmod<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg"
+   ],
+   "5": [
+    "chmod<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg"
+   ]
+  },
+  "gpt-4o-mini/stack-narrative": {},
+  "gpt-4o-mini/context": {
+   "1": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "2": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "3": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "4": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "5": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ]
+  },
+  "gpt-4o-mini/stack-context": {},
+  "gpt-4o-mini/agent": {
+   "1": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "2": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "3": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "4": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "5": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ]
+  },
+  "gpt-4o-mini/stack-agent": {},
+  "gpt-4o-mini/sweep": {
+   "1": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "2": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "3": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "4": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ],
+   "5": [
+    "cron<-cron",
+    "rm<-apt-key"
+   ]
+  },
+  "gpt-4o-mini/stack-sweep": {},
+  "qwen3-4b/narrative": {
+   "1": [
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "touch<-apt-key"
+   ],
+   "2": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gzip<-savelog",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb",
+    "touch<-apt-key"
+   ],
+   "3": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gzip<-savelog",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb",
+    "touch<-apt-key"
+   ],
+   "4": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gzip<-savelog",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb",
+    "touch<-apt-key"
+   ],
+   "5": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gzip<-savelog",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb",
+    "touch<-apt-key"
+   ]
+  },
+  "qwen3-4b/context": {
+   "1": [
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "mktemp<-apt-key",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "2": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "mktemp<-apt-key",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "3": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "mktemp<-apt-key",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "4": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "mktemp<-apt-key",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "5": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "mktemp<-apt-key",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ]
+  },
+  "qwen3-4b/sweep": {
+   "1": [
+    "chmod<-apt-key",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "2": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "3": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "4": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "5": [
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "ip<-sudo",
+    "mktemp<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ]
+  },
+  "qwen3-8b/narrative": {
+   "1": [
+    "apt-key<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "mktemp<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN"
+   ],
+   "2": [
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "find<-update-motd-upd",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb"
+   ],
+   "3": [
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "find<-update-motd-upd",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb"
+   ],
+   "4": [
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "find<-update-motd-upd",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb"
+   ],
+   "5": [
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cmp<-apt.systemd.dai",
+    "cp<-apt-key",
+    "find<-update-motd-upd",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "kill<-UNKNOWN",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "tar<-dpkg-deb"
+   ]
+  },
+  "qwen3-8b/context": {
+   "1": [
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-snap-confine",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "2": [
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "3": [
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "4": [
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "sed<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ],
+   "5": [
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "awk<-UNKNOWN",
+    "chmod<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "sed<-UNKNOWN",
+    "sh<-logrotate",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "touch<-apt-key"
+   ]
+  },
+  "llama-3.1-8b/narrative": {
+   "1": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "avahi-autoipd<-run-parts",
+    "base64<-UNKNOWN",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-packagekitd",
+    "gpgv<-python3",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "lsb_release<-apt-check",
+    "lsb_release<-env",
+    "lsb_release<-sh",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "nm-dispatcher<-UNKNOWN",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "run-parts<-01-ifupdown",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "snap-seccomp<-snapd",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "test<-sh",
+    "touch<-apt-key",
+    "which<-apt.systemd.dai",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "2": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-check<-sh",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-unattended-upgr",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-packagekitd",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "lsb_release<-apt-check",
+    "lsb_release<-env",
+    "lsb_release<-sh",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "snap-seccomp<-snapd",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "3": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-check<-sh",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-unattended-upgr",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-packagekitd",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "lsb_release<-apt-check",
+    "lsb_release<-env",
+    "lsb_release<-sh",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "snap-seccomp<-snapd",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "4": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-check<-sh",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-unattended-upgr",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-packagekitd",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "lsb_release<-apt-check",
+    "lsb_release<-env",
+    "lsb_release<-sh",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "snap-seccomp<-snapd",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "5": [
+    "(fwupdmgr)<-UNKNOWN",
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-check<-sh",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-unattended-upgr",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "fwupd<-UNKNOWN",
+    "fwupdmgr<-UNKNOWN",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-packagekitd",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-avahi-autoipd",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "invoke-rc.d<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "lsb_release<-apt-check",
+    "lsb_release<-env",
+    "lsb_release<-sh",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "nm-online<-apt-helper",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "snap-seccomp<-snapd",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "unattended-upgr<-apt.systemd.dai",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ]
+  },
+  "llama-3.1-8b/context": {
+   "1": [
+    "01-ifupdown<-nm-dispatcher",
+    "Xorg<-Xorg.wrap",
+    "anacron<-UNKNOWN",
+    "apparmor_parser<-snapd",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "avahi-autoipd<-run-parts",
+    "base64<-UNKNOWN",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "dumpe2fs<-udisksd",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-python3",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-avahi-autoipd",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "logrotate<-logrotate",
+    "lsb_release<-apt-check",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "nm-dispatcher<-UNKNOWN",
+    "openvpn<-run-parts",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-snap-confine",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-Xorg.wrap",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "sort<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-apt-helper",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "systemd-detect-<-snapd",
+    "test<-sh",
+    "touch<-apt-key",
+    "tracker-extract<-(systemd)",
+    "ubuntu-distro-i<-python3",
+    "uname<-python3",
+    "which<-apt.systemd.dai",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "2": [
+    "01-ifupdown<-nm-dispatcher",
+    "Xorg<-Xorg.wrap",
+    "anacron<-UNKNOWN",
+    "apparmor_parser<-snapd",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "dumpe2fs<-udisksd",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "file<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-avahi-autoipd",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "logrotate<-logrotate",
+    "lsb_release<-apt-check",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "openjdk-11-jre-<-dpkg",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-Xorg.wrap",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "sort<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-apt-helper",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "systemd-detect-<-snapd",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-sh",
+    "tracker-extract<-(systemd)",
+    "ubuntu-distro-i<-python3",
+    "uname<-python3",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "3": [
+    "01-ifupdown<-nm-dispatcher",
+    "Xorg<-Xorg.wrap",
+    "anacron<-UNKNOWN",
+    "apparmor_parser<-snapd",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "dumpe2fs<-udisksd",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "file<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-avahi-autoipd",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "logrotate<-logrotate",
+    "lsb_release<-apt-check",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "openjdk-11-jre-<-dpkg",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-Xorg.wrap",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "sort<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-apt-helper",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "systemd-detect-<-snapd",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-sh",
+    "tracker-extract<-(systemd)",
+    "ubuntu-distro-i<-python3",
+    "uname<-python3",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "4": [
+    "01-ifupdown<-nm-dispatcher",
+    "Xorg<-Xorg.wrap",
+    "anacron<-UNKNOWN",
+    "apparmor_parser<-snapd",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "dumpe2fs<-udisksd",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "file<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-avahi-autoipd",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "logrotate<-logrotate",
+    "lsb_release<-apt-check",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "openjdk-11-jre-<-dpkg",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-Xorg.wrap",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "sort<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-apt-helper",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "systemd-detect-<-snapd",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-sh",
+    "tracker-extract<-(systemd)",
+    "ubuntu-distro-i<-python3",
+    "uname<-python3",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ],
+   "5": [
+    "(fwupdmgr)<-UNKNOWN",
+    "01-ifupdown<-nm-dispatcher",
+    "50-motd-news<-UNKNOWN",
+    "Xorg<-Xorg.wrap",
+    "anacron<-UNKNOWN",
+    "apparmor_parser<-snapd",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "avahi-autoipd<-run-parts",
+    "awk<-UNKNOWN",
+    "base64<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cached_setup_te<-UNKNOWN",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cmp<-apt.systemd.dai",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "cups-browsed<-UNKNOWN",
+    "cupsd<-UNKNOWN",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-deb<-dpkg",
+    "dpkg<-UNKNOWN",
+    "dpkg<-apt-check",
+    "dpkg<-apt-config",
+    "dpkg<-apt-extracttemp",
+    "dpkg<-apt-get",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "dpkg<-unattended-upgr",
+    "dumpe2fs<-udisksd",
+    "echo<-sh",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "file<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "flock<-apt.systemd.dai",
+    "fuser<-package-system-",
+    "fwupd<-UNKNOWN",
+    "fwupdmgr<-UNKNOWN",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "gpgv<-packagekitd",
+    "gpgv<-python3",
+    "grep<-UNKNOWN",
+    "grep<-apt.systemd.dai",
+    "grep<-avahi-autoipd",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-logrotate",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "invoke-rc.d<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-avahi-autoipd",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "iwconfig<-wireless-tools",
+    "logrotate<-logrotate",
+    "lsb_release<-apt-check",
+    "lsb_release<-env",
+    "lsb_release<-unattended-upgr",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "nm-online<-apt-helper",
+    "on_ac_power<-unattended-upgr",
+    "openjdk-11-jre-<-dpkg",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rm<-snap-confine",
+    "rm<-update-motd-upd",
+    "rndc<-UNKNOWN",
+    "run-parts<-01-ifupdown",
+    "runlevel<-invoke-rc.d",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-Xorg.wrap",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "snap-device-hel<-UNKNOWN",
+    "sort<-UNKNOWN",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-apt-helper",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "systemd-detect-<-snapd",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-sh",
+    "tracker-extract<-(systemd)",
+    "ubuntu-distro-i<-python3",
+    "uname<-python3",
+    "unattended-upgr<-apt.systemd.dai",
+    "update-alternat<-UNKNOWN",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts",
+    "wpasupplicant<-run-parts"
+   ]
+  },
+  "gemma-3-4b/narrative": {
+   "1": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "bind9<-run-parts",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "find<-apt-key",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-wpasupplicant",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "test<-sh",
+    "touch<-apt-key",
+    "which<-apt.systemd.dai"
+   ],
+   "2": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "bind9<-run-parts",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-savelog",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-savelog",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "test<-sh",
+    "touch<-apt-key",
+    "which<-apt.systemd.dai"
+   ],
+   "3": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "bind9<-run-parts",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-savelog",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-savelog",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "test<-sh",
+    "touch<-apt-key",
+    "which<-apt.systemd.dai"
+   ],
+   "4": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "bind9<-run-parts",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-savelog",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-savelog",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "test<-sh",
+    "touch<-apt-key",
+    "which<-apt.systemd.dai"
+   ],
+   "5": [
+    "01-ifupdown<-nm-dispatcher",
+    "5<-snap-confine",
+    "apt-config<-apt-key",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "bind9<-run-parts",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cmp<-apt.systemd.dai",
+    "cp<-apt-key",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "gpg-connect-age<-gpgconf",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "gzip<-savelog",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mv<-savelog",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-savelog",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-(systemd)",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "test<-sh",
+    "touch<-apt-key",
+    "unattended-upgr<-apt.systemd.dai",
+    "which<-apt.systemd.dai"
+   ]
+  },
+  "gemma-3-4b/context": {
+   "1": [
+    "01-ifupdown<-nm-dispatcher",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-helper<-UNKNOWN",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "bind9<-run-parts",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cp<-apt-key",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "dpkg<-apt-config",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-wpasupplicant",
+    "grub-editenv<-UNKNOWN",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rndc<-UNKNOWN",
+    "sed<-UNKNOWN",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "test<-sh",
+    "touch<-apt-key",
+    "ubuntu-distro-i<-python3",
+    "which<-apt.systemd.dai",
+    "wireless-tools<-run-parts"
+   ],
+   "2": [
+    "01-ifupdown<-nm-dispatcher",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-helper<-UNKNOWN",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "awk<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cmp<-dpkg",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-split<-dpkg",
+    "dpkg<-apt-config",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "grub-editenv<-UNKNOWN",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rndc<-UNKNOWN",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-sh",
+    "ubuntu-distro-i<-python3",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts"
+   ],
+   "3": [
+    "01-ifupdown<-nm-dispatcher",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-helper<-UNKNOWN",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "awk<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cmp<-dpkg",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-split<-dpkg",
+    "dpkg<-apt-config",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "grub-editenv<-UNKNOWN",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rndc<-UNKNOWN",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-sh",
+    "ubuntu-distro-i<-python3",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts"
+   ],
+   "4": [
+    "01-ifupdown<-nm-dispatcher",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-helper<-UNKNOWN",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "awk<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cmp<-dpkg",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-split<-dpkg",
+    "dpkg<-apt-config",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "fuser<-package-system-",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-sh",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "grub-editenv<-UNKNOWN",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rndc<-UNKNOWN",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-sh",
+    "ubuntu-distro-i<-python3",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts"
+   ],
+   "5": [
+    "01-ifupdown<-nm-dispatcher",
+    "apt-config<-apt-key",
+    "apt-config<-apt.systemd.dai",
+    "apt-config<-update-motd-upd",
+    "apt-helper<-UNKNOWN",
+    "apt-key<-UNKNOWN",
+    "apt.systemd.dai<-UNKNOWN",
+    "apt.systemd.dai<-apt.systemd.dai",
+    "awk<-UNKNOWN",
+    "basename<-savelog",
+    "bind9<-run-parts",
+    "cat<-apt-key",
+    "cat<-on_ac_power",
+    "chmod<-apt-key",
+    "cmp<-apt-key",
+    "cmp<-apt.systemd.dai",
+    "cmp<-dpkg",
+    "cp<-apt-key",
+    "cp<-dpkg",
+    "cron<-cron",
+    "cups-browsed<-UNKNOWN",
+    "date<-apt.systemd.dai",
+    "date<-savelog",
+    "dirname<-savelog",
+    "dpkg-split<-dpkg",
+    "dpkg<-apt-config",
+    "dpkg<-packagekitd",
+    "dpkg<-python3",
+    "env<-apt.systemd.dai",
+    "ethtool<-run-parts",
+    "false<-UNKNOWN",
+    "find<-UNKNOWN",
+    "find<-apt-key",
+    "find<-update-motd-upd",
+    "flock<-apt.systemd.dai",
+    "fuser<-package-system-",
+    "fwupdmgr<-UNKNOWN",
+    "gpg-connect-age<-gpgconf",
+    "gpgconf<-apt-key",
+    "gpgv<-apt-key",
+    "grep<-avahi-autoipd",
+    "grep<-update-cracklib",
+    "grep<-wpasupplicant",
+    "grub-editenv<-UNKNOWN",
+    "gzip<-savelog",
+    "http<-packagekitd",
+    "https<-packagekitd",
+    "https<-python3",
+    "id<-sh",
+    "invoke-rc.d<-sh",
+    "ip6tables<-ufw-init",
+    "ip<-sudo",
+    "iptables<-ufw-init",
+    "mktemp<-apt-key",
+    "mktemp<-update-motd-upd",
+    "mv<-savelog",
+    "nm-dispatcher<-UNKNOWN",
+    "on_ac_power<-unattended-upgr",
+    "openvpn<-run-parts",
+    "package-system-<-sh",
+    "pkexec<-sh",
+    "python3<-UNKNOWN",
+    "readlink<-apt-key",
+    "rm<-apt-key",
+    "rm<-dpkg",
+    "rm<-savelog",
+    "rndc<-UNKNOWN",
+    "savelog<-dpkg",
+    "sed<-UNKNOWN",
+    "sh<-cron",
+    "sh<-gnome-session-b",
+    "sh<-gpu-manager",
+    "sh<-logrotate",
+    "sudo<-UNKNOWN",
+    "sudo<-sudo",
+    "systemctl<-invoke-rc.d",
+    "systemctl<-sh",
+    "tar<-dpkg-deb",
+    "test<-sh",
+    "touch<-apt-key",
+    "touch<-apt.systemd.dai",
+    "touch<-sh",
+    "ubuntu-distro-i<-python3",
+    "which<-apt.systemd.dai",
+    "which<-savelog",
+    "wireless-tools<-run-parts"
+   ]
+  }
+ },
+ "pairs": {
+  "forest vs gpt-4o-mini/narrative": {
+   "n": 3554,
+   "d_f1": 0.14799347158218112,
+   "d_f1_ci_cluster": [
+    0.03919555876660349,
+    0.24111042221525505
+   ],
+   "d_f1_ci_hourblock": [
+    0.016176996873446033,
+    0.2718372023362846
+   ],
+   "d_recall": 0.24742268041237114,
+   "d_recall_ci_cluster": [
+    0.13265306122448983,
+    0.3465346534653466
+   ],
+   "d_fp_per_1000": 0.28926815157651226,
+   "d_fp_per_1000_ci_cluster": [
+    -5.538805625493497,
+    6.724627149248473
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 60,
+    "b_right_a_wrong": 37,
+    "p": 0.02499073659259804
+   }
+  },
+  "forest vs gpt-4o-mini/context": {
+   "n": 3554,
+   "d_f1": 0.129563984402694,
+   "d_f1_ci_cluster": [
+    0.03616272129563446,
+    0.2204997517229741
+   ],
+   "d_f1_ci_hourblock": [
+    0.05391861289970537,
+    0.19165180299110282
+   ],
+   "d_recall": 0.0,
+   "d_recall_ci_cluster": [
+    -0.11650485436893199,
+    0.10847014431351779
+   ],
+   "d_fp_per_1000": -12.43853051778999,
+   "d_fp_per_1000_ci_cluster": [
+    -19.194203593145517,
+    -5.828512373709844
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 86,
+    "b_right_a_wrong": 43,
+    "p": 0.00019194241357169234
+   }
+  },
+  "forest vs gpt-4o-mini/sweep": {
+   "n": 1247,
+   "d_f1": 0.06388107673764576,
+   "d_f1_ci_cluster": [
+    -0.06091900498111752,
+    0.1757513187449493
+   ],
+   "d_f1_ci_hourblock": [
+    -0.0397863341763848,
+    0.14694412669361193
+   ],
+   "d_recall": -0.0535714285714286,
+   "d_recall_ci_cluster": [
+    -0.22580645161290314,
+    0.0943849782293178
+   ],
+   "d_fp_per_1000": -15.113350125944585,
+   "d_fp_per_1000_ci_cluster": [
+    -30.37859526457969,
+    -1.4383442265795356
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 48,
+    "b_right_a_wrong": 33,
+    "p": 0.1192736683117644
+   }
+  },
+  "forest vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": 0.1948025433121391,
+   "d_f1_ci_cluster": [
+    0.10723450142027448,
+    0.27468772267950425
+   ],
+   "d_f1_ci_hourblock": [
+    0.13533766725539173,
+    0.26159107860387637
+   ],
+   "d_recall": -0.08247422680412375,
+   "d_recall_ci_cluster": [
+    -0.19150010745755422,
+    0.009806348281886977
+   ],
+   "d_fp_per_1000": -26.323401793462537,
+   "d_fp_per_1000_ci_cluster": [
+    -34.87306039507352,
+    -18.630663078133825
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 129,
+    "b_right_a_wrong": 46,
+    "p": 2.633142283931521e-10
+   }
+  },
+  "gpt-4o-mini/context vs gpt-4o-mini/sweep": {
+   "n": 1247,
+   "d_f1": 0.0977443609022558,
+   "d_f1_ci_cluster": [
+    0.039409444602609006,
+    0.15730026808180825
+   ],
+   "d_f1_ci_hourblock": [
+    0.05545868530191413,
+    0.1384659747297526
+   ],
+   "d_recall": 0.0,
+   "d_recall_ci_cluster": [
+    -0.09095117845117848,
+    0.08333333333333326
+   ],
+   "d_fp_per_1000": -15.952980688497064,
+   "d_fp_per_1000_ci_cluster": [
+    -25.08064589548049,
+    -9.24481437066085
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 22,
+    "b_right_a_wrong": 3,
+    "p": 0.00015652179718017578
+   }
+  },
+  "gpt-4o-mini/sweep vs gpt-4o-mini/agent": {
+   "n": 1247,
+   "d_f1": -0.020191989407481015,
+   "d_f1_ci_cluster": [
+    -0.056765236798545636,
+    0.013231526172862688
+   ],
+   "d_f1_ci_hourblock": [
+    -0.05468779178337994,
+    0.011689628006884964
+   ],
+   "d_recall": -0.0714285714285714,
+   "d_recall_ci_cluster": [
+    -0.14,
+    -0.01666666666666672
+   ],
+   "d_fp_per_1000": -2.518891687657426,
+   "d_fp_per_1000_ci_cluster": [
+    -6.195516959027493,
+    0.0
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 3,
+    "b_right_a_wrong": 4,
+    "p": 1.0
+   }
+  },
+  "gpt-4o-mini/context vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": 0.06523855890944508,
+   "d_f1_ci_cluster": [
+    0.022493352475861553,
+    0.1075536347129291
+   ],
+   "d_f1_ci_hourblock": [
+    0.02023725020136293,
+    0.11692335288903893
+   ],
+   "d_recall": -0.08247422680412375,
+   "d_recall_ci_cluster": [
+    -0.1428571428571429,
+    -0.03570378151260504
+   ],
+   "d_fp_per_1000": -13.884871275672547,
+   "d_fp_per_1000_ci_cluster": [
+    -19.255989354964438,
+    -9.119310700089045
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 54,
+    "b_right_a_wrong": 14,
+    "p": 1.109725672785106e-06
+   }
+  },
+  "forest vs gpt-4o-mini/stack-agent": {
+   "n": 3554,
+   "d_f1": -0.12054466401103914,
+   "d_f1_ci_cluster": [
+    -0.17302674550955854,
+    -0.06851571506183536
+   ],
+   "d_f1_ci_hourblock": [
+    -0.2172142312302494,
+    -0.03031166263572343
+   ],
+   "d_recall": 0.05154639175257736,
+   "d_recall_ci_cluster": [
+    0.010204081632653073,
+    0.101123595505618
+   ],
+   "d_fp_per_1000": 10.1243853051779,
+   "d_fp_per_1000_ci_cluster": [
+    6.835016099284957,
+    14.152739636059273
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 5,
+    "b_right_a_wrong": 35,
+    "p": 1.382612026645802e-06
+   }
+  },
+  "forest vs signature-rule": {
+   "n": 3554,
+   "d_f1": 0.05170282117567726,
+   "d_f1_ci_cluster": [
+    -0.02996959944368455,
+    0.14130638063231873
+   ],
+   "d_f1_ci_hourblock": [
+    -0.09625423349928226,
+    0.24087566844919778
+   ],
+   "d_recall": 0.1030927835051546,
+   "d_recall_ci_cluster": [
+    -0.037744833782569626,
+    0.24705882352941178
+   ],
+   "d_fp_per_1000": 0.5785363031530228,
+   "d_fp_per_1000_ci_cluster": [
+    0.0,
+    1.4365183035917473
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 17,
+    "b_right_a_wrong": 9,
+    "p": 0.16863754391670227
+   }
+  },
+  "forest@0.5 vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": 0.23563482930571544,
+   "d_f1_ci_cluster": [
+    0.13067262373309155,
+    0.32306691945276705
+   ],
+   "d_f1_ci_hourblock": [
+    0.01122746487629001,
+    0.45007265062070095
+   ],
+   "d_recall": -0.2577319587628867,
+   "d_recall_ci_cluster": [
+    -0.3830372828420847,
+    -0.138280792504392
+   ],
+   "d_fp_per_1000": -36.44778709864044,
+   "d_fp_per_1000_ci_cluster": [
+    -45.22662492791828,
+    -28.988304082290515
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 127,
+    "b_right_a_wrong": 26,
+    "p": 3.6193734261160736e-17
+   }
+  },
+  "forest@oobf1 vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": 0.23563482930571544,
+   "d_f1_ci_cluster": [
+    0.1304888220196893,
+    0.32028264719649024
+   ],
+   "d_f1_ci_hourblock": [
+    -0.03576255516884836,
+    0.46170321860087316
+   ],
+   "d_recall": -0.2577319587628867,
+   "d_recall_ci_cluster": [
+    -0.3877671068427371,
+    -0.1439714285714286
+   ],
+   "d_fp_per_1000": -36.44778709864044,
+   "d_fp_per_1000_ci_cluster": [
+    -45.22662492791828,
+    -28.988304082290515
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 126,
+    "b_right_a_wrong": 25,
+    "p": 2.0397790182976807e-17
+   }
+  },
+  "forest vs qwen3-4b/narrative": {
+   "n": 3554,
+   "d_f1": 0.34104253700274195,
+   "d_f1_ci_cluster": [
+    0.1873927459233216,
+    0.4628477127324081
+   ],
+   "d_f1_ci_hourblock": [
+    0.07767310276747573,
+    0.4921908963762515
+   ],
+   "d_recall": 0.14432989690721654,
+   "d_recall_ci_cluster": [
+    0.02520483193277313,
+    0.25270467836257304
+   ],
+   "d_fp_per_1000": -34.13364188602836,
+   "d_fp_per_1000_ci_cluster": [
+    -58.01633694763466,
+    -14.154700159728861
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 173,
+    "b_right_a_wrong": 41,
+    "p": 1.7310862743133827e-20
+   }
+  },
+  "forest vs qwen3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.25739857755520623,
+   "d_f1_ci_cluster": [
+    0.1371564761355402,
+    0.3633421538368029
+   ],
+   "d_f1_ci_hourblock": [
+    -0.016379915416213583,
+    0.44750639159951167
+   ],
+   "d_recall": -0.061855670103092786,
+   "d_recall_ci_cluster": [
+    -0.1775752855659398,
+    0.04041434755720473
+   ],
+   "d_fp_per_1000": -35.57998264391091,
+   "d_fp_per_1000_ci_cluster": [
+    -49.580793368380235,
+    -22.14285846259398
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 163,
+    "b_right_a_wrong": 46,
+    "p": 1.5373350457687663e-16
+   }
+  },
+  "forest vs qwen3-4b/sweep": {
+   "n": 3554,
+   "d_f1": 0.15623243790041585,
+   "d_f1_ci_cluster": [
+    0.03135026377800383,
+    0.2698382653902475
+   ],
+   "d_f1_ci_hourblock": [
+    -0.1034818422785285,
+    0.3550497156230112
+   ],
+   "d_recall": -0.05154639175257736,
+   "d_recall_ci_cluster": [
+    -0.16495095586027422,
+    0.04212790039615167
+   ],
+   "d_fp_per_1000": -18.802429852473242,
+   "d_fp_per_1000_ci_cluster": [
+    -29.08653715675259,
+    -7.966013447725172
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 106,
+    "b_right_a_wrong": 46,
+    "p": 1.2573094218827093e-06
+   }
+  },
+  "gpt-4o-mini/context vs qwen3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.12783459315251222,
+   "d_f1_ci_cluster": [
+    0.02775277171528722,
+    0.21235082902872426
+   ],
+   "d_f1_ci_hourblock": [
+    -0.12575550140312367,
+    0.2951063122167162
+   ],
+   "d_recall": -0.061855670103092786,
+   "d_recall_ci_cluster": [
+    -0.1596173644474949,
+    0.027556016231474863
+   ],
+   "d_fp_per_1000": -23.141452126120914,
+   "d_fp_per_1000_ci_cluster": [
+    -36.53747519449863,
+    -10.045713328868054
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 152,
+    "b_right_a_wrong": 78,
+    "p": 1.2122453400939628e-06
+   }
+  },
+  "forest vs qwen3-8b/narrative": {
+   "n": 3554,
+   "d_f1": 0.5219089275950949,
+   "d_f1_ci_cluster": [
+    0.4285616326661861,
+    0.6015741731786989
+   ],
+   "d_f1_ci_hourblock": [
+    0.3890286280380011,
+    0.6063788430991461
+   ],
+   "d_recall": 0.31958762886597936,
+   "d_recall_ci_cluster": [
+    0.2110964912280702,
+    0.40625858516483515
+   ],
+   "d_fp_per_1000": -65.6638704078681,
+   "d_fp_per_1000_ci_cluster": [
+    -87.5702485607775,
+    -46.302244679670245
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 294,
+    "b_right_a_wrong": 36,
+    "p": 1.789840255668459e-51
+   }
+  },
+  "forest vs qwen3-8b/context": {
+   "n": 3554,
+   "d_f1": 0.5556323604710701,
+   "d_f1_ci_cluster": [
+    0.46301623680301424,
+    0.6347099442045703
+   ],
+   "d_f1_ci_hourblock": [
+    0.3851066847620895,
+    0.6547128460079684
+   ],
+   "d_recall": 0.030927835051546393,
+   "d_recall_ci_cluster": [
+    -0.09416855203619909,
+    0.14118241235888287
+   ],
+   "d_fp_per_1000": -146.36968469771477,
+   "d_fp_per_1000_ci_cluster": [
+    -181.37215168257097,
+    -114.25751475858661
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 553,
+    "b_right_a_wrong": 44,
+    "p": 4.312456253769862e-113
+   }
+  },
+  "gpt-4o-mini/context vs qwen3-8b/context": {
+   "n": 3554,
+   "d_f1": 0.4260683760683761,
+   "d_f1_ci_cluster": [
+    0.36508747943475583,
+    0.48456936463332373
+   ],
+   "d_f1_ci_hourblock": [
+    0.280583282417641,
+    0.4932951287549013
+   ],
+   "d_recall": 0.030927835051546393,
+   "d_recall_ci_cluster": [
+    -0.0294264705882353,
+    0.0918663977218794
+   ],
+   "d_fp_per_1000": -133.9311541799248,
+   "d_fp_per_1000_ci_cluster": [
+    -167.86672668634645,
+    -103.16628004381725
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 476,
+    "b_right_a_wrong": 10,
+    "p": 1.88693097267631e-126
+   }
+  },
+  "forest vs llama-3.1-8b/narrative": {
+   "n": 3554,
+   "d_f1": 0.7169649555245954,
+   "d_f1_ci_cluster": [
+    0.6431110039238651,
+    0.7739552218023082
+   ],
+   "d_f1_ci_hourblock": [
+    0.6438659788132316,
+    0.7666506905497462
+   ],
+   "d_recall": 0.15463917525773196,
+   "d_recall_ci_cluster": [
+    0.03525210084033623,
+    0.25928819444444445
+   ],
+   "d_fp_per_1000": -551.0558287532543,
+   "d_fp_per_1000_ci_cluster": [
+    -583.7479507984106,
+    -516.0232582953138
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 1952,
+    "b_right_a_wrong": 32,
+    "p": 0.0
+   }
+  },
+  "forest vs llama-3.1-8b/context": {
+   "n": 3554,
+   "d_f1": 0.720287214660808,
+   "d_f1_ci_cluster": [
+    0.6482642206309657,
+    0.7755416438761411
+   ],
+   "d_f1_ci_hourblock": [
+    0.656057438212523,
+    0.7659736969778725
+   ],
+   "d_recall": -0.1030927835051546,
+   "d_recall_ci_cluster": [
+    -0.20430107526881724,
+    -0.018173701298701314
+   ],
+   "d_fp_per_1000": -805.0332658374313,
+   "d_fp_per_1000_ci_cluster": [
+    -834.1475674549432,
+    -776.5158735987327
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 2788,
+    "b_right_a_wrong": 15,
+    "p": 0.0
+   }
+  },
+  "gpt-4o-mini/context vs llama-3.1-8b/context": {
+   "n": 3554,
+   "d_f1": 0.590723230258114,
+   "d_f1_ci_cluster": [
+    0.5197807057217112,
+    0.650822153134705
+   ],
+   "d_f1_ci_hourblock": [
+    0.5379847665205854,
+    0.6305282522925958
+   ],
+   "d_recall": -0.1030927835051546,
+   "d_recall_ci_cluster": [
+    -0.19354838709677424,
+    -0.028846153846153855
+   ],
+   "d_fp_per_1000": -792.5947353196414,
+   "d_fp_per_1000_ci_cluster": [
+    -819.9652066822974,
+    -766.3391000800871
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 2743,
+    "b_right_a_wrong": 13,
+    "p": 0.0
+   }
+  },
+  "forest vs gemma-3-4b/narrative": {
+   "n": 3554,
+   "d_f1": 0.6943192291579388,
+   "d_f1_ci_cluster": [
+    0.6197530670502629,
+    0.7561638268512757
+   ],
+   "d_f1_ci_hourblock": [
+    0.6211866412894544,
+    0.7441018457100487
+   ],
+   "d_recall": 0.3711340206185567,
+   "d_recall_ci_cluster": [
+    0.23396072013093291,
+    0.5106630380999506
+   ],
+   "d_fp_per_1000": -265.837431298814,
+   "d_fp_per_1000_ci_cluster": [
+    -300.8797363443076,
+    -229.06119672374717
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 993,
+    "b_right_a_wrong": 38,
+    "p": 2.763993438771389e-241
+   }
+  },
+  "forest vs gemma-3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.6966270958548328,
+   "d_f1_ci_cluster": [
+    0.6223648517082058,
+    0.755083837709296
+   ],
+   "d_f1_ci_hourblock": [
+    0.6134961607935868,
+    0.7490709150739483
+   ],
+   "d_recall": -0.020618556701030966,
+   "d_recall_ci_cluster": [
+    -0.12904174573055027,
+    0.08249570446735398
+   ],
+   "d_fp_per_1000": -516.6329187156495,
+   "d_fp_per_1000_ci_cluster": [
+    -576.9839220635023,
+    -453.587300128178
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 1828,
+    "b_right_a_wrong": 44,
+    "p": 0.0
+   }
+  },
+  "gpt-4o-mini/context vs gemma-3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.567063111452139,
+   "d_f1_ci_cluster": [
+    0.4986435104755885,
+    0.6298061724379195
+   ],
+   "d_f1_ci_hourblock": [
+    0.5064402697924412,
+    0.6058307487658393
+   ],
+   "d_recall": -0.020618556701030966,
+   "d_recall_ci_cluster": [
+    -0.11766287160025303,
+    0.06452359617682192
+   ],
+   "d_fp_per_1000": -504.19438819785944,
+   "d_fp_per_1000_ci_cluster": [
+    -562.4892055857678,
+    -444.44198755040264
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 1751,
+    "b_right_a_wrong": 10,
+    "p": 0.0
+   }
+  }
+ },
+ "pairs_filtered": {
+  "forest vs gpt-4o-mini/narrative": {
+   "n": 3554,
+   "d_f1": 0.17284335098100279,
+   "d_f1_ci_cluster": [
+    0.08302398132552608,
+    0.2594066673354675
+   ],
+   "d_f1_ci_hourblock": [
+    0.09517886766764033,
+    0.2742270370008804
+   ],
+   "d_recall": 0.24742268041237114,
+   "d_recall_ci_cluster": [
+    0.13265306122448983,
+    0.3465346534653466
+   ],
+   "d_fp_per_1000": -0.8678044547295346,
+   "d_fp_per_1000_ci_cluster": [
+    -4.43859510399262,
+    2.2518529316935183
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 37,
+    "b_right_a_wrong": 10,
+    "p": 9.848878492846323e-05
+   }
+  },
+  "forest vs gpt-4o-mini/context": {
+   "n": 3554,
+   "d_f1": -0.014354066985646008,
+   "d_f1_ci_cluster": [
+    -0.09584386989011276,
+    0.06979785386413986
+   ],
+   "d_f1_ci_hourblock": [
+    -0.11431874483897599,
+    0.06425784748681404
+   ],
+   "d_recall": 0.0,
+   "d_recall_ci_cluster": [
+    -0.11650485436893199,
+    0.10847014431351779
+   ],
+   "d_fp_per_1000": 0.8678044547295339,
+   "d_fp_per_1000_ci_cluster": [
+    -2.31786871345128,
+    3.3938575430172064
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 13,
+    "b_right_a_wrong": 16,
+    "p": 0.711071103811264
+   }
+  },
+  "forest vs gpt-4o-mini/sweep": {
+   "n": 1247,
+   "d_f1": -0.07819790828640383,
+   "d_f1_ci_cluster": [
+    -0.1913981267953232,
+    0.013972741153528884
+   ],
+   "d_f1_ci_hourblock": [
+    -0.21132615489946255,
+    0.020036300705973162
+   ],
+   "d_recall": -0.0535714285714286,
+   "d_recall_ci_cluster": [
+    -0.22580645161290314,
+    0.0943849782293178
+   ],
+   "d_fp_per_1000": 5.037783375314861,
+   "d_fp_per_1000_ci_cluster": [
+    0.0,
+    10.510184655034502
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 6,
+    "b_right_a_wrong": 15,
+    "p": 0.0783538818359375
+   }
+  },
+  "forest vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": -0.044657097288676395,
+   "d_f1_ci_cluster": [
+    -0.12559868314914904,
+    0.03647279514901467
+   ],
+   "d_f1_ci_hourblock": [
+    -0.1240988586515404,
+    0.028896650968079498
+   ],
+   "d_recall": -0.08247422680412375,
+   "d_recall_ci_cluster": [
+    -0.19150010745755422,
+    0.009806348281886977
+   ],
+   "d_fp_per_1000": 0.0,
+   "d_fp_per_1000_ci_cluster": [
+    -3.9122708930418537,
+    3.013868820014801
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 11,
+    "b_right_a_wrong": 19,
+    "p": 0.20048842206597334
+   }
+  },
+  "gpt-4o-mini/context vs gpt-4o-mini/sweep": {
+   "n": 1247,
+   "d_f1": 0.017508417508417584,
+   "d_f1_ci_cluster": [
+    -0.03447184445735269,
+    0.06950909598407704
+   ],
+   "d_f1_ci_hourblock": [
+    -0.03389272770975451,
+    0.06723565055065878
+   ],
+   "d_recall": 0.0,
+   "d_recall_ci_cluster": [
+    -0.09095117845117848,
+    0.08333333333333326
+   ],
+   "d_fp_per_1000": -1.6792611251049538,
+   "d_fp_per_1000_ci_cluster": [
+    -4.35996335058897,
+    0.0
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 5,
+    "b_right_a_wrong": 3,
+    "p": 0.7265625
+   }
+  },
+  "gpt-4o-mini/sweep vs gpt-4o-mini/agent": {
+   "n": 1247,
+   "d_f1": -0.02006269592476495,
+   "d_f1_ci_cluster": [
+    -0.06152575882134864,
+    0.019982760940259088
+   ],
+   "d_f1_ci_hourblock": [
+    -0.061224489795918435,
+    0.01570440676270518
+   ],
+   "d_recall": -0.0714285714285714,
+   "d_recall_ci_cluster": [
+    -0.14,
+    -0.01666666666666672
+   ],
+   "d_fp_per_1000": -1.6792611251049538,
+   "d_fp_per_1000_ci_cluster": [
+    -4.35996335058897,
+    0.0
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 2,
+    "b_right_a_wrong": 4,
+    "p": 0.6875
+   }
+  },
+  "gpt-4o-mini/context vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": -0.030303030303030387,
+   "d_f1_ci_cluster": [
+    -0.07203493602276105,
+    0.009273214874961739
+   ],
+   "d_f1_ci_hourblock": [
+    -0.07489581289303747,
+    0.03874325526014348
+   ],
+   "d_recall": -0.08247422680412375,
+   "d_recall_ci_cluster": [
+    -0.1428571428571429,
+    -0.03570378151260504
+   ],
+   "d_fp_per_1000": -0.8678044547295339,
+   "d_fp_per_1000_ci_cluster": [
+    -2.9447256336821073,
+    0.5663442040480279
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 4,
+    "b_right_a_wrong": 9,
+    "p": 0.266845703125
+   }
+  },
+  "forest vs gpt-4o-mini/stack-agent": {
+   "n": 3554,
+   "d_f1": -0.00921796015462395,
+   "d_f1_ci_cluster": [
+    -0.044149156200627586,
+    0.030169848312176905
+   ],
+   "d_f1_ci_hourblock": [
+    -0.07987292779245186,
+    0.053439398489654656
+   ],
+   "d_recall": 0.05154639175257736,
+   "d_recall_ci_cluster": [
+    0.010204081632653073,
+    0.101123595505618
+   ],
+   "d_fp_per_1000": 2.3141452126120914,
+   "d_fp_per_1000_ci_cluster": [
+    0.8550729686190163,
+    4.075291031159428
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 5,
+    "b_right_a_wrong": 8,
+    "p": 0.5810546875
+   }
+  },
+  "forest vs signature-rule": {
+   "n": 3554,
+   "d_f1": 0.05204021289177996,
+   "d_f1_ci_cluster": [
+    -0.033900791545915375,
+    0.15006243315799725
+   ],
+   "d_f1_ci_hourblock": [
+    -0.10742780714436297,
+    0.2498024014839357
+   ],
+   "d_recall": 0.1030927835051546,
+   "d_recall_ci_cluster": [
+    -0.037744833782569626,
+    0.24705882352941178
+   ],
+   "d_fp_per_1000": 0.5785363031530226,
+   "d_fp_per_1000_ci_cluster": [
+    0.0,
+    1.4365183035917475
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 17,
+    "b_right_a_wrong": 9,
+    "p": 0.16863754391670227
+   }
+  },
+  "forest@0.5 vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": -0.11515151515151523,
+   "d_f1_ci_cluster": [
+    -0.2181126763860453,
+    -0.020925762439807614
+   ],
+   "d_f1_ci_hourblock": [
+    -0.27517704517704517,
+    0.055939286403731574
+   ],
+   "d_recall": -0.2577319587628867,
+   "d_recall_ci_cluster": [
+    -0.3830372828420847,
+    -0.138280792504392
+   ],
+   "d_fp_per_1000": -2.3141452126120914,
+   "d_fp_per_1000_ci_cluster": [
+    -5.832319891243431,
+    0.0
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 9,
+    "b_right_a_wrong": 26,
+    "p": 0.005988120567053557
+   }
+  },
+  "forest@oobf1 vs gpt-4o-mini/agent": {
+   "n": 3554,
+   "d_f1": -0.11515151515151523,
+   "d_f1_ci_cluster": [
+    -0.223186589952963,
+    -0.023708725375814928
+   ],
+   "d_f1_ci_hourblock": [
+    -0.32352691803465566,
+    0.0687231895714678
+   ],
+   "d_recall": -0.2577319587628867,
+   "d_recall_ci_cluster": [
+    -0.3877671068427371,
+    -0.1439714285714286
+   ],
+   "d_fp_per_1000": -2.3141452126120914,
+   "d_fp_per_1000_ci_cluster": [
+    -5.832319891243431,
+    0.0
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 8,
+    "b_right_a_wrong": 25,
+    "p": 0.004551384132355452
+   }
+  },
+  "forest vs qwen3-4b/narrative": {
+   "n": 3554,
+   "d_f1": 0.3005945826910372,
+   "d_f1_ci_cluster": [
+    0.10105987806457684,
+    0.4747083718974631
+   ],
+   "d_f1_ci_hourblock": [
+    0.09992778746550426,
+    0.48962966097247823
+   ],
+   "d_recall": 0.14432989690721654,
+   "d_recall_ci_cluster": [
+    0.02520483193277313,
+    0.25270467836257304
+   ],
+   "d_fp_per_1000": -18.22389354932022,
+   "d_fp_per_1000_ci_cluster": [
+    -42.58189456384111,
+    -2.4898267764817374
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 91,
+    "b_right_a_wrong": 14,
+    "p": 5.322015987015649e-15
+   }
+  },
+  "forest vs qwen3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.03217760039910189,
+   "d_f1_ci_cluster": [
+    -0.06014572169578073,
+    0.11581920246350869
+   ],
+   "d_f1_ci_hourblock": [
+    -0.07267805694055243,
+    0.16627786485545115
+   ],
+   "d_recall": -0.061855670103092786,
+   "d_recall_ci_cluster": [
+    -0.1775752855659398,
+    0.04041434755720473
+   ],
+   "d_fp_per_1000": -4.339022273647672,
+   "d_fp_per_1000_ci_cluster": [
+    -8.258992765926035,
+    -0.5520573307937114
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 28,
+    "b_right_a_wrong": 19,
+    "p": 0.24296021728332556
+   }
+  },
+  "forest vs qwen3-4b/sweep": {
+   "n": 3554,
+   "d_f1": 0.08392603129445231,
+   "d_f1_ci_cluster": [
+    -0.0076526222868750875,
+    0.16590109840484363
+   ],
+   "d_f1_ci_hourblock": [
+    -0.025582148189866184,
+    0.21652545462598613
+   ],
+   "d_recall": -0.05154639175257736,
+   "d_recall_ci_cluster": [
+    -0.16495095586027422,
+    0.04212790039615167
+   ],
+   "d_fp_per_1000": -7.810240092565809,
+   "d_fp_per_1000_ci_cluster": [
+    -11.598407602795387,
+    -4.019201468608395
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 41,
+    "b_right_a_wrong": 19,
+    "p": 0.0062176026593266705
+   }
+  },
+  "gpt-4o-mini/context vs qwen3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.0465316673847479,
+   "d_f1_ci_cluster": [
+    -0.03241398195978957,
+    0.11927815401652603
+   ],
+   "d_f1_ci_hourblock": [
+    -0.071603405172991,
+    0.21231453319161023
+   ],
+   "d_recall": -0.061855670103092786,
+   "d_recall_ci_cluster": [
+    -0.1596173644474949,
+    0.027556016231474863
+   ],
+   "d_fp_per_1000": -5.206826728377206,
+   "d_fp_per_1000_ci_cluster": [
+    -8.99008415018456,
+    -1.7183875967830524
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 25,
+    "b_right_a_wrong": 13,
+    "p": 0.07295138851623051
+   }
+  },
+  "forest vs qwen3-8b/narrative": {
+   "n": 3554,
+   "d_f1": 0.4168607359105728,
+   "d_f1_ci_cluster": [
+    0.2564573594801048,
+    0.5563810175768602
+   ],
+   "d_f1_ci_hourblock": [
+    0.23657453238585308,
+    0.5561266667118356
+   ],
+   "d_recall": 0.31958762886597936,
+   "d_recall_ci_cluster": [
+    0.2110964912280702,
+    0.40625858516483515
+   ],
+   "d_fp_per_1000": -19.380966155626265,
+   "d_fp_per_1000_ci_cluster": [
+    -42.06660288237842,
+    -4.938565917615672
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 107,
+    "b_right_a_wrong": 9,
+    "p": 2.000237426140383e-22
+   }
+  },
+  "forest vs qwen3-8b/context": {
+   "n": 3554,
+   "d_f1": 0.18784029038112504,
+   "d_f1_ci_cluster": [
+    0.05096316236613815,
+    0.3285237833505715
+   ],
+   "d_f1_ci_hourblock": [
+    0.031756491531694186,
+    0.33932468863275544
+   ],
+   "d_recall": 0.030927835051546393,
+   "d_recall_ci_cluster": [
+    -0.09416855203619909,
+    0.14118241235888287
+   ],
+   "d_fp_per_1000": -13.017066820943015,
+   "d_fp_per_1000_ci_cluster": [
+    -25.0084954738833,
+    -4.035246830193544
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 65,
+    "b_right_a_wrong": 17,
+    "p": 8.953883178712315e-08
+   }
+  },
+  "gpt-4o-mini/context vs qwen3-8b/context": {
+   "n": 3554,
+   "d_f1": 0.20219435736677105,
+   "d_f1_ci_cluster": [
+    0.08747759504225516,
+    0.3341878972898695
+   ],
+   "d_f1_ci_hourblock": [
+    0.04538066494551744,
+    0.3830276948670915
+   ],
+   "d_recall": 0.030927835051546393,
+   "d_recall_ci_cluster": [
+    -0.0294264705882353,
+    0.0918663977218794
+   ],
+   "d_fp_per_1000": -13.884871275672547,
+   "d_fp_per_1000_ci_cluster": [
+    -26.17476292702689,
+    -5.202452539821717
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 58,
+    "b_right_a_wrong": 7,
+    "p": 4.2705216207923607e-11
+   }
+  },
+  "forest vs llama-3.1-8b/narrative": {
+   "n": 3554,
+   "d_f1": 0.6234190126478987,
+   "d_f1_ci_cluster": [
+    0.5133819335363526,
+    0.7047971342007608
+   ],
+   "d_f1_ci_hourblock": [
+    0.37478173084368877,
+    0.756998297063025
+   ],
+   "d_recall": 0.15463917525773196,
+   "d_recall_ci_cluster": [
+    0.03525210084033623,
+    0.25928819444444445
+   ],
+   "d_fp_per_1000": -98.6404396875904,
+   "d_fp_per_1000_ci_cluster": [
+    -137.81747017376122,
+    -66.52804660075628
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 368,
+    "b_right_a_wrong": 12,
+    "p": 1.3329425237950333e-92
+   }
+  },
+  "forest vs llama-3.1-8b/context": {
+   "n": 3554,
+   "d_f1": 0.5940832473340212,
+   "d_f1_ci_cluster": [
+    0.4660518126483005,
+    0.691527802450483
+   ],
+   "d_f1_ci_hourblock": [
+    0.2805078438644356,
+    0.7506894611911902
+   ],
+   "d_recall": -0.07216494845360821,
+   "d_recall_ci_cluster": [
+    -0.18752948113207546,
+    0.03261765408504541
+   ],
+   "d_fp_per_1000": -120.04628290425224,
+   "d_fp_per_1000_ci_cluster": [
+    -171.3614488672725,
+    -79.29102749222129
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 428,
+    "b_right_a_wrong": 20,
+    "p": 8.180657925089443e-101
+   }
+  },
+  "gpt-4o-mini/context vs llama-3.1-8b/context": {
+   "n": 3554,
+   "d_f1": 0.6084373143196673,
+   "d_f1_ci_cluster": [
+    0.48941198098864597,
+    0.7048213767109823
+   ],
+   "d_f1_ci_hourblock": [
+    0.27041130437189503,
+    0.7986447953147786
+   ],
+   "d_recall": -0.07216494845360821,
+   "d_recall_ci_cluster": [
+    -0.1782495557248032,
+    0.0206350076771222
+   ],
+   "d_fp_per_1000": -120.91408735898177,
+   "d_fp_per_1000_ci_cluster": [
+    -172.58462391740264,
+    -80.10789451038127
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 425,
+    "b_right_a_wrong": 14,
+    "p": 1.3380448297379615e-106
+   }
+  },
+  "forest vs gemma-3-4b/narrative": {
+   "n": 3554,
+   "d_f1": 0.5276956436033904,
+   "d_f1_ci_cluster": [
+    0.33863559942963645,
+    0.6607293954427798
+   ],
+   "d_f1_ci_hourblock": [
+    0.35427035316982025,
+    0.6678116635368523
+   ],
+   "d_recall": 0.3711340206185567,
+   "d_recall_ci_cluster": [
+    0.23396072013093291,
+    0.5106630380999506
+   ],
+   "d_fp_per_1000": -32.6873011281458,
+   "d_fp_per_1000_ci_cluster": [
+    -64.63634273765365,
+    -9.98726447106871
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 160,
+    "b_right_a_wrong": 11,
+    "p": 4.726935179641606e-35
+   }
+  },
+  "forest vs gemma-3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.46793783466109423,
+   "d_f1_ci_cluster": [
+    0.2667664814062739,
+    0.6139230615445073
+   ],
+   "d_f1_ci_hourblock": [
+    0.17738271211641113,
+    0.6518655558611834
+   ],
+   "d_recall": -0.010309278350515427,
+   "d_recall_ci_cluster": [
+    -0.12371134020618557,
+    0.09785568230736114
+   ],
+   "d_fp_per_1000": -61.32484813422042,
+   "d_fp_per_1000_ci_cluster": [
+    -110.48002592507851,
+    -27.836616767981795
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 228,
+    "b_right_a_wrong": 17,
+    "p": 2.512363396455892e-48
+   }
+  },
+  "gpt-4o-mini/context vs gemma-3-4b/context": {
+   "n": 3554,
+   "d_f1": 0.48229190164674024,
+   "d_f1_ci_cluster": [
+    0.29335642127015904,
+    0.6275350374972251
+   ],
+   "d_f1_ci_hourblock": [
+    0.18097688982965424,
+    0.7060690395961231
+   ],
+   "d_recall": -0.010309278350515427,
+   "d_recall_ci_cluster": [
+    -0.11367156074014481,
+    0.08167517006802726
+   ],
+   "d_fp_per_1000": -62.192652588949954,
+   "d_fp_per_1000_ci_cluster": [
+    -111.9197261682599,
+    -29.075711738067636
+   ],
+   "mcnemar_record_level": {
+    "a_right_b_wrong": 226,
+    "b_right_a_wrong": 12,
+    "p": 2.486139401217318e-52
+   }
+  }
+ },
+ "fp_by_name": {
+  "forest@0.5": {
+   "n_types": 0,
+   "top": {}
+  },
+  "forest@oobf1": {
+   "n_types": 0,
+   "top": {}
+  },
+  "forest": {
+   "n_types": 2,
+   "top": {
+    "base64": 33,
+    "sh": 2
+   }
+  },
+  "signature-rule": {
+   "n_types": 1,
+   "top": {
+    "base64": 33
+   }
+  },
+  "gpt-4o-mini/narrative": {
+   "n_types": 4,
+   "top": {
+    "rm": 29,
+    "chmod": 3,
+    "readlink": 1,
+    "sudo": 1
+   }
+  },
+  "gpt-4o-mini/stack-narrative": {
+   "n_types": 0,
+   "top": {}
+  },
+  "gpt-4o-mini/context": {
+   "n_types": 6,
+   "top": {
+    "cron": 66,
+    "rm": 7,
+    "sudo": 2,
+    "chmod": 1,
+    "systemctl": 1,
+    "systemd-tty-ask": 1
+   }
+  },
+  "gpt-4o-mini/stack-context": {
+   "n_types": 0,
+   "top": {}
+  },
+  "gpt-4o-mini/agent": {
+   "n_types": 7,
+   "top": {
+    "cron": 112,
+    "rm": 6,
+    "sh": 2,
+    "dpkg-preconfigu": 2,
+    "sudo": 2,
+    "systemctl": 1
+   }
+  },
+  "gpt-4o-mini/stack-agent": {
+   "n_types": 0,
+   "top": {}
+  },
+  "gpt-4o-mini/sweep": {
+   "n_types": 2,
+   "top": {
+    "cron": 42,
+    "dpkg-preconfigu": 2
+   }
+  },
+  "gpt-4o-mini/stack-sweep": {
+   "n_types": 0,
+   "top": {}
+  },
+  "qwen3-4b/narrative": {
+   "n_types": 17,
+   "top": {
+    "mv": 28,
+    "gpg-connect-age": 17,
+    "mktemp": 16,
+    "chmod": 16,
+    "touch": 16,
+    "rm": 14
+   }
+  },
+  "qwen3-4b/context": {
+   "n_types": 13,
+   "top": {
+    "rm": 37,
+    "sed": 29,
+    "mktemp": 16,
+    "chmod": 16,
+    "touch": 16,
+    "gpg-connect-age": 16
+   }
+  },
+  "qwen3-4b/sweep": {
+   "n_types": 13,
+   "top": {
+    "rm": 19,
+    "chmod": 16,
+    "mktemp": 15,
+    "touch": 14,
+    "gpg-connect-age": 7,
+    "awk": 6
+   }
+  },
+  "qwen3-8b/narrative": {
+   "n_types": 18,
+   "top": {
+    "sed": 84,
+    "rm": 43,
+    "mv": 28,
+    "apt-key": 16,
+    "gpgv": 16,
+    "cp": 14
+   }
+  },
+  "qwen3-8b/context": {
+   "n_types": 24,
+   "top": {
+    "sed": 112,
+    "cron": 109,
+    "apt-config": 58,
+    "gpg-connect-age": 47,
+    "rm": 39,
+    "readlink": 17
+   }
+  },
+  "llama-3.1-8b/narrative": {
+   "n_types": 103,
+   "top": {
+    "dpkg": 292,
+    "01-ifupdown": 272,
+    "lsb_release": 128,
+    "apt-config": 113,
+    "sed": 113,
+    "sh": 100
+   }
+  },
+  "llama-3.1-8b/context": {
+   "n_types": 126,
+   "top": {
+    "01-ifupdown": 258,
+    "dpkg": 239,
+    "nm-dispatcher": 225,
+    "cron": 221,
+    "apt-config": 170,
+    "lsb_release": 128
+   }
+  },
+  "gemma-3-4b/narrative": {
+   "n_types": 47,
+   "top": {
+    "01-ifupdown": 260,
+    "sed": 112,
+    "cmp": 86,
+    "sh": 63,
+    "gpg-connect-age": 48,
+    "grep": 40
+   }
+  },
+  "gemma-3-4b/context": {
+   "n_types": 87,
+   "top": {
+    "01-ifupdown": 257,
+    "apt-config": 204,
+    "cron": 166,
+    "sed": 112,
+    "dpkg": 104,
+    "cmp": 91
+   }
+  }
+ },
+ "per_chunk": {
+  "forest@0.5": {
+   "1": {
+    "n_attack": 13,
+    "tp": 6,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 6
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 33,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 33
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 24,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 24
+   }
+  },
+  "forest@oobf1": {
+   "1": {
+    "n_attack": 13,
+    "tp": 6,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 6
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 36,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 36
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 21,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 21
+   }
+  },
+  "forest": {
+   "1": {
+    "n_attack": 13,
+    "tp": 6,
+    "fp": 8,
+    "fp_filtered": 8,
+    "tp_filtered": 6
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 1,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 36,
+    "fp": 17,
+    "fp_filtered": 0,
+    "tp_filtered": 36
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 38,
+    "fp": 9,
+    "fp_filtered": 0,
+    "tp_filtered": 38
+   }
+  },
+  "signature-rule": {
+   "1": {
+    "n_attack": 13,
+    "tp": 13,
+    "fp": 6,
+    "fp_filtered": 6,
+    "tp_filtered": 13
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 1,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 36,
+    "fp": 17,
+    "fp_filtered": 0,
+    "tp_filtered": 36
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 21,
+    "fp": 9,
+    "fp_filtered": 0,
+    "tp_filtered": 21
+   }
+  },
+  "gpt-4o-mini/narrative": {
+   "1": {
+    "n_attack": 13,
+    "tp": 7,
+    "fp": 8,
+    "fp_filtered": 8,
+    "tp_filtered": 7
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 2,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 2
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 22,
+    "fp": 8,
+    "fp_filtered": 0,
+    "tp_filtered": 22
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 30,
+    "fp": 18,
+    "fp_filtered": 3,
+    "tp_filtered": 30
+   }
+  },
+  "gpt-4o-mini/stack-narrative": {
+   "1": {
+    "n_attack": 13,
+    "tp": 6,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 6
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 25,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 25
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 34,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 34
+   }
+  },
+  "gpt-4o-mini/context": {
+   "1": {
+    "n_attack": 13,
+    "tp": 11,
+    "fp": 5,
+    "fp_filtered": 0,
+    "tp_filtered": 11
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 1,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 34,
+    "fp": 22,
+    "fp_filtered": 0,
+    "tp_filtered": 34
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 35,
+    "fp": 50,
+    "fp_filtered": 5,
+    "tp_filtered": 35
+   }
+  },
+  "gpt-4o-mini/stack-context": {
+   "1": {
+    "n_attack": 13,
+    "tp": 6,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 6
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 34,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 34
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 31,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 31
+   }
+  },
+  "gpt-4o-mini/agent": {
+   "1": {
+    "n_attack": 13,
+    "tp": 13,
+    "fp": 14,
+    "fp_filtered": 4,
+    "tp_filtered": 13
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 2,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 36,
+    "fp": 33,
+    "fp_filtered": 0,
+    "tp_filtered": 36
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 39,
+    "fp": 77,
+    "fp_filtered": 4,
+    "tp_filtered": 39
+   }
+  },
+  "gpt-4o-mini/stack-agent": {
+   "1": {
+    "n_attack": 13,
+    "tp": 6,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 6
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 36,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 36
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 33,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 33
+   }
+  },
+  "gpt-4o-mini/sweep": {
+   "1": {
+    "n_attack": 13,
+    "tp": 13,
+    "fp": 12,
+    "fp_filtered": 2,
+    "tp_filtered": 13
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 2,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 32,
+    "fp": 30,
+    "fp_filtered": 0,
+    "tp_filtered": 32
+   },
+   "5": {
+    "n_attack": 2,
+    "tp": 2,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 2
+   }
+  },
+  "gpt-4o-mini/stack-sweep": {
+   "1": {
+    "n_attack": 13,
+    "tp": 6,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 6
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 32,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 32
+   },
+   "5": {
+    "n_attack": 2,
+    "tp": 2,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 2
+   }
+  },
+  "qwen3-4b/narrative": {
+   "1": {
+    "n_attack": 13,
+    "tp": 11,
+    "fp": 58,
+    "fp_filtered": 57,
+    "tp_filtered": 11
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 3,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 3
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 26,
+    "fp": 22,
+    "fp_filtered": 1,
+    "tp_filtered": 26
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 31,
+    "fp": 73,
+    "fp_filtered": 13,
+    "tp_filtered": 31
+   }
+  },
+  "qwen3-4b/context": {
+   "1": {
+    "n_attack": 13,
+    "tp": 13,
+    "fp": 19,
+    "fp_filtered": 15,
+    "tp_filtered": 13
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 32,
+    "fp": 36,
+    "fp_filtered": 0,
+    "tp_filtered": 32
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 41,
+    "fp": 103,
+    "fp_filtered": 8,
+    "tp_filtered": 41
+   }
+  },
+  "qwen3-4b/sweep": {
+   "1": {
+    "n_attack": 13,
+    "tp": 13,
+    "fp": 12,
+    "fp_filtered": 12,
+    "tp_filtered": 13
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 34,
+    "fp": 23,
+    "fp_filtered": 8,
+    "tp_filtered": 34
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 38,
+    "fp": 65,
+    "fp_filtered": 15,
+    "tp_filtered": 38
+   }
+  },
+  "qwen3-8b/narrative": {
+   "1": {
+    "n_attack": 13,
+    "tp": 7,
+    "fp": 72,
+    "fp_filtered": 60,
+    "tp_filtered": 7
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 2,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 2
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 22,
+    "fp": 44,
+    "fp_filtered": 3,
+    "tp_filtered": 22
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 23,
+    "fp": 146,
+    "fp_filtered": 12,
+    "tp_filtered": 23
+   }
+  },
+  "qwen3-8b/context": {
+   "1": {
+    "n_attack": 13,
+    "tp": 11,
+    "fp": 58,
+    "fp_filtered": 32,
+    "tp_filtered": 11
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 2,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 31,
+    "fp": 135,
+    "fp_filtered": 3,
+    "tp_filtered": 31
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 35,
+    "fp": 346,
+    "fp_filtered": 18,
+    "tp_filtered": 35
+   }
+  },
+  "llama-3.1-8b/narrative": {
+   "1": {
+    "n_attack": 13,
+    "tp": 10,
+    "fp": 355,
+    "fp_filtered": 225,
+    "tp_filtered": 10
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 3,
+    "fp": 4,
+    "fp_filtered": 0,
+    "tp_filtered": 3
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 26,
+    "fp": 402,
+    "fp_filtered": 27,
+    "tp_filtered": 26
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 31,
+    "fp": 1179,
+    "fp_filtered": 97,
+    "tp_filtered": 31
+   }
+  },
+  "llama-3.1-8b/context": {
+   "1": {
+    "n_attack": 13,
+    "tp": 13,
+    "fp": 502,
+    "fp_filtered": 278,
+    "tp_filtered": 13
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 5,
+    "fp": 13,
+    "fp_filtered": 0,
+    "tp_filtered": 5
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 1,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 34,
+    "fp": 631,
+    "fp_filtered": 43,
+    "tp_filtered": 32
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 43,
+    "fp": 1671,
+    "fp_filtered": 102,
+    "tp_filtered": 42
+   }
+  },
+  "gemma-3-4b/narrative": {
+   "1": {
+    "n_attack": 13,
+    "tp": 8,
+    "fp": 126,
+    "fp_filtered": 70,
+    "tp_filtered": 8
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 3,
+    "fp": 4,
+    "fp_filtered": 0,
+    "tp_filtered": 3
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 17,
+    "fp": 216,
+    "fp_filtered": 5,
+    "tp_filtered": 17
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 21,
+    "fp": 608,
+    "fp_filtered": 46,
+    "tp_filtered": 21
+   }
+  },
+  "gemma-3-4b/context": {
+   "1": {
+    "n_attack": 13,
+    "tp": 12,
+    "fp": 242,
+    "fp_filtered": 145,
+    "tp_filtered": 12
+   },
+   "2": {
+    "n_attack": 5,
+    "tp": 4,
+    "fp": 6,
+    "fp_filtered": 0,
+    "tp_filtered": 4
+   },
+   "3": {
+    "n_attack": 0,
+    "tp": 0,
+    "fp": 0,
+    "fp_filtered": 0,
+    "tp_filtered": 0
+   },
+   "4": {
+    "n_attack": 36,
+    "tp": 32,
+    "fp": 432,
+    "fp_filtered": 21,
+    "tp_filtered": 31
+   },
+   "5": {
+    "n_attack": 43,
+    "tp": 39,
+    "fp": 1141,
+    "fp_filtered": 54,
+    "tp_filtered": 39
+   }
+  }
+ },
+ "parse_failures": {
+  "gpt-4o-mini/narrative": {
+   "n": 0,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.6288659793814433,
+   "recall_failures_excluded": 0.6288659793814433,
+   "recall_failures_as_alert": 0.6288659793814433
+  },
+  "gpt-4o-mini/context": {
+   "n": 0,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.8762886597938144,
+   "recall_failures_excluded": 0.8762886597938144,
+   "recall_failures_as_alert": 0.8762886597938144
+  },
+  "gpt-4o-mini/agent": {
+   "n": 0,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.9587628865979382,
+   "recall_failures_excluded": 0.9587628865979382,
+   "recall_failures_as_alert": 0.9587628865979382
+  },
+  "gpt-4o-mini/sweep": {
+   "n": 0,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.9285714285714286,
+   "recall_failures_excluded": 0.9285714285714286,
+   "recall_failures_as_alert": 0.9285714285714286
+  },
+  "qwen3-4b/narrative": {
+   "n": 0,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.7319587628865979,
+   "recall_failures_excluded": 0.7319587628865979,
+   "recall_failures_as_alert": 0.7319587628865979
+  },
+  "qwen3-4b/context": {
+   "n": 0,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.9381443298969072,
+   "recall_failures_excluded": 0.9381443298969072,
+   "recall_failures_as_alert": 0.9381443298969072
+  },
+  "qwen3-4b/sweep": {
+   "n": 1,
+   "n_attack": 1,
+   "recall_failures_as_no_alert": 0.9278350515463918,
+   "recall_failures_excluded": 0.9375,
+   "recall_failures_as_alert": 0.9381443298969072
+  },
+  "qwen3-8b/narrative": {
+   "n": 1,
+   "n_attack": 1,
+   "recall_failures_as_no_alert": 0.5567010309278351,
+   "recall_failures_excluded": 0.5625,
+   "recall_failures_as_alert": 0.5670103092783505
+  },
+  "qwen3-8b/context": {
+   "n": 0,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.845360824742268,
+   "recall_failures_excluded": 0.845360824742268,
+   "recall_failures_as_alert": 0.845360824742268
+  },
+  "llama-3.1-8b/narrative": {
+   "n": 8,
+   "n_attack": 0,
+   "recall_failures_as_no_alert": 0.7216494845360825,
+   "recall_failures_excluded": 0.7216494845360825,
+   "recall_failures_as_alert": 0.7216494845360825
+  },
+  "llama-3.1-8b/context": {
+   "n": 19,
+   "n_attack": 2,
+   "recall_failures_as_no_alert": 0.979381443298969,
+   "recall_failures_excluded": 1.0,
+   "recall_failures_as_alert": 1.0
+  },
+  "gemma-3-4b/narrative": {
+   "n": 39,
+   "n_attack": 11,
+   "recall_failures_as_no_alert": 0.5051546391752577,
+   "recall_failures_excluded": 0.5697674418604651,
+   "recall_failures_as_alert": 0.6185567010309279
+  },
+  "gemma-3-4b/context": {
+   "n": 42,
+   "n_attack": 8,
+   "recall_failures_as_no_alert": 0.8969072164948454,
+   "recall_failures_excluded": 0.9775280898876404,
+   "recall_failures_as_alert": 0.979381443298969
+  }
+ },
+ "prevalence": {
+  "forest@0.5": {
+   "0.276": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.1": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.027": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.01": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.001": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   }
+  },
+  "forest@oobf1": {
+   "0.276": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.1": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.027": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.01": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   },
+   "0.001": {
+    "precision": 1.0,
+    "f1": 0.8242424242424242
+   }
+  },
+  "forest": {
+   "0.276": {
+    "precision": 0.9705839692098537,
+    "f1": 0.9210291086019168
+   },
+   "0.1": {
+    "precision": 0.9058107274969174,
+    "f1": 0.8908051639385263
+   },
+   "0.027": {
+    "precision": 0.70603444823643,
+    "f1": 0.7820020794407067
+   },
+   "0.01": {
+    "precision": 0.46645765536947376,
+    "f1": 0.6088291571659593
+   },
+   "0.001": {
+    "precision": 0.0797311047497592,
+    "f1": 0.14616321862007337
+   }
+  },
+  "signature-rule": {
+   "0.276": {
+    "precision": 0.9686301460646489,
+    "f1": 0.8599490706588548
+   },
+   "0.1": {
+    "precision": 0.8999979172741285,
+    "f1": 0.8317920864659545
+   },
+   "0.027": {
+    "precision": 0.6920836761411124,
+    "f1": 0.730394747612028
+   },
+   "0.01": {
+    "precision": 0.44999427256349644,
+    "f1": 0.5688955494386744
+   },
+   "0.001": {
+    "precision": 0.07499839459612377,
+    "f1": 0.13673388614026516
+   }
+  },
+  "gpt-4o-mini/narrative": {
+   "0.276": {
+    "precision": 0.960591521306126,
+    "f1": 0.7601125888177224
+   },
+   "0.1": {
+    "precision": 0.8766123903075753,
+    "f1": 0.7323542077626206
+   },
+   "0.027": {
+    "precision": 0.6395500072843618,
+    "f1": 0.6341629968753404
+   },
+   "0.01": {
+    "precision": 0.39241764192497286,
+    "f1": 0.4832704638894109
+   },
+   "0.001": {
+    "precision": 0.06015468486090315,
+    "f1": 0.10980580633537695
+   }
+  },
+  "gpt-4o-mini/stack-narrative": {
+   "0.276": {
+    "precision": 1.0,
+    "f1": 0.8383233532934131
+   },
+   "0.1": {
+    "precision": 1.0,
+    "f1": 0.8383233532934131
+   },
+   "0.027": {
+    "precision": 1.0,
+    "f1": 0.8383233532934131
+   },
+   "0.01": {
+    "precision": 1.0,
+    "f1": 0.8383233532934131
+   },
+   "0.001": {
+    "precision": 1.0,
+    "f1": 0.8383233532934131
+   }
+  },
+  "gpt-4o-mini/context": {
+   "0.276": {
+    "precision": 0.9367308036946232,
+    "f1": 0.9055022266310921
+   },
+   "0.1": {
+    "precision": 0.8118633250354341,
+    "f1": 0.8428466529368908
+   },
+   "0.027": {
+    "precision": 0.518701440479387,
+    "f1": 0.6516636785046508
+   },
+   "0.01": {
+    "precision": 0.28176327263277906,
+    "f1": 0.4264160417005271
+   },
+   "0.001": {
+    "precision": 0.03742161988895198,
+    "f1": 0.07177798448582295
+   }
+  },
+  "gpt-4o-mini/stack-context": {
+   "0.276": {
+    "precision": 1.0,
+    "f1": 0.8786127167630058
+   },
+   "0.1": {
+    "precision": 1.0,
+    "f1": 0.8786127167630058
+   },
+   "0.027": {
+    "precision": 1.0,
+    "f1": 0.8786127167630058
+   },
+   "0.01": {
+    "precision": 1.0,
+    "f1": 0.8786127167630058
+   },
+   "0.001": {
+    "precision": 1.0,
+    "f1": 0.8786127167630058
+   }
+  },
+  "gpt-4o-mini/agent": {
+   "0.276": {
+    "precision": 0.9093210124992669,
+    "f1": 0.9333876698035733
+   },
+   "0.1": {
+    "precision": 0.7450793628722198,
+    "f1": 0.8385218067154564
+   },
+   "0.027": {
+    "precision": 0.4219474091984687,
+    "f1": 0.5859991299656362
+   },
+   "0.01": {
+    "precision": 0.20992844172202169,
+    "f1": 0.3444392781689387
+   },
+   "0.001": {
+    "precision": 0.025655880776415563,
+    "f1": 0.04997447656756156
+   }
+  },
+  "gpt-4o-mini/stack-agent": {
+   "0.276": {
+    "precision": 1.0,
+    "f1": 0.903954802259887
+   },
+   "0.1": {
+    "precision": 1.0,
+    "f1": 0.903954802259887
+   },
+   "0.027": {
+    "precision": 1.0,
+    "f1": 0.903954802259887
+   },
+   "0.01": {
+    "precision": 1.0,
+    "f1": 0.903954802259887
+   },
+   "0.001": {
+    "precision": 1.0,
+    "f1": 0.903954802259887
+   }
+  },
+  "gpt-4o-mini/sweep": {
+   "0.276": {
+    "precision": 0.9054976890601386,
+    "f1": 0.916889417760325
+   },
+   "0.1": {
+    "precision": 0.736338992723641,
+    "f1": 0.8213575236731121
+   },
+   "0.027": {
+    "precision": 0.4108878533608411,
+    "f1": 0.569690659692956
+   },
+   "0.01": {
+    "precision": 0.20247950096119893,
+    "f1": 0.3324636840918607
+   },
+   "0.001": {
+    "precision": 0.02454241543780226,
+    "f1": 0.04782091018174911
+   }
+  },
+  "gpt-4o-mini/stack-sweep": {
+   "0.276": {
+    "precision": 1.0,
+    "f1": 0.8910891089108911
+   },
+   "0.1": {
+    "precision": 1.0,
+    "f1": 0.8910891089108911
+   },
+   "0.027": {
+    "precision": 1.0,
+    "f1": 0.8910891089108911
+   },
+   "0.01": {
+    "precision": 1.0,
+    "f1": 0.8910891089108911
+   },
+   "0.001": {
+    "precision": 1.0,
+    "f1": 0.8910891089108911
+   }
+  },
+  "qwen3-4b/narrative": {
+   "0.276": {
+    "precision": 0.8631020161793377,
+    "f1": 0.7921391990811923
+   },
+   "0.1": {
+    "precision": 0.6475900753530194,
+    "f1": 0.6871945628512833
+   },
+   "0.027": {
+    "precision": 0.31456567746830383,
+    "f1": 0.44002623397538854
+   },
+   "0.01": {
+    "precision": 0.14314232294049242,
+    "f1": 0.23945639952488615
+   },
+   "0.001": {
+    "precision": 0.01628539121842755,
+    "f1": 0.03186188557295789
+   }
+  },
+  "qwen3-4b/context": {
+   "0.276": {
+    "precision": 0.8866851175357506,
+    "f1": 0.9116891626123703
+   },
+   "0.1": {
+    "precision": 0.6951876266515807,
+    "f1": 0.7985961794757883
+   },
+   "0.027": {
+    "precision": 0.3628912220846177,
+    "f1": 0.5233436424539425
+   },
+   "0.01": {
+    "precision": 0.17173082455491986,
+    "f1": 0.29031787706661627
+   },
+   "0.001": {
+    "precision": 0.020133231694497773,
+    "f1": 0.0394204725514533
+   }
+  },
+  "qwen3-4b/sweep": {
+   "0.276": {
+    "precision": 0.9244004069985494,
+    "f1": 0.9261145448006703
+   },
+   "0.1": {
+    "precision": 0.7808899932234018,
+    "f1": 0.8480441125764727
+   },
+   "0.027": {
+    "precision": 0.47091729680731853,
+    "f1": 0.6247475829035263
+   },
+   "0.01": {
+    "precision": 0.2447087138104339,
+    "f1": 0.38727649884021187
+   },
+   "0.001": {
+    "precision": 0.03110855147713877,
+    "f1": 0.06019875281991193
+   }
+  },
+  "qwen3-8b/narrative": {
+   "0.276": {
+    "precision": 0.7368566596471221,
+    "f1": 0.6342335793145263
+   },
+   "0.1": {
+    "precision": 0.44938902851200274,
+    "f1": 0.49732195068020185
+   },
+   "0.027": {
+    "precision": 0.16931887688738775,
+    "f1": 0.25966228282197956
+   },
+   "0.01": {
+    "precision": 0.06907184910887924,
+    "f1": 0.1228956090418905
+   },
+   "0.001": {
+    "precision": 0.007299162190466538,
+    "f1": 0.014409396187883464
+   }
+  },
+  "qwen3-8b/context": {
+   "0.276": {
+    "precision": 0.6731253718634803,
+    "f1": 0.7494751296197636
+   },
+   "0.1": {
+    "precision": 0.3750812088911001,
+    "f1": 0.5196133062535286
+   },
+   "0.027": {
+    "precision": 0.13035747111345097,
+    "f1": 0.22588302332721372
+   },
+   "0.01": {
+    "precision": 0.051741134799022474,
+    "f1": 0.09751383980738994
+   },
+   "0.001": {
+    "precision": 0.005378197164274712,
+    "f1": 0.010688394615375364
+   }
+  },
+  "llama-3.1-8b/narrative": {
+   "0.276": {
+    "precision": 0.3289598917527896,
+    "f1": 0.45191627197352
+   },
+   "0.1": {
+    "precision": 0.12502001952872738,
+    "f1": 0.21311889046777568
+   },
+   "0.027": {
+    "precision": 0.03445462803995952,
+    "f1": 0.06576915573228981
+   },
+   "0.01": {
+    "precision": 0.012822829394742741,
+    "f1": 0.02519792250162817
+   },
+   "0.001": {
+    "precision": 0.001285582011010668,
+    "f1": 0.0025665917687623316
+   }
+  },
+  "llama-3.1-8b/context": {
+   "0.276": {
+    "precision": 0.3141365339132285,
+    "f1": 0.47569418809307
+   },
+   "0.1": {
+    "precision": 0.1177735644850744,
+    "f1": 0.21026243830545432
+   },
+   "0.027": {
+    "precision": 0.03226399093328224,
+    "f1": 0.062470017532977755
+   },
+   "0.01": {
+    "precision": 0.011990469837368243,
+    "f1": 0.023690894405114113
+   },
+   "0.001": {
+    "precision": 0.0012012206141008175,
+    "f1": 0.0023994982209125143
+   }
+  },
+  "gemma-3-4b/narrative": {
+   "0.276": {
+    "precision": 0.4110107799579394,
+    "f1": 0.45324566483470075
+   },
+   "0.1": {
+    "precision": 0.16901525091420677,
+    "f1": 0.25328582408019357
+   },
+   "0.027": {
+    "precision": 0.048340152950302806,
+    "f1": 0.08823661168521878
+   },
+   "0.01": {
+    "precision": 0.018154459681555046,
+    "f1": 0.03504930279214201
+   },
+   "0.001": {
+    "precision": 0.0018290046450971605,
+    "f1": 0.003644812580467834
+   }
+  },
+  "gemma-3-4b/context": {
+   "0.276": {
+    "precision": 0.3936063591023295,
+    "f1": 0.5471130108395487
+   },
+   "0.1": {
+    "precision": 0.1590903320405482,
+    "f1": 0.27024545100437103
+   },
+   "0.027": {
+    "precision": 0.04511678409485897,
+    "f1": 0.08591197085082235
+   },
+   "0.01": {
+    "precision": 0.016908140861764863,
+    "f1": 0.033190585897562734
+   },
+   "0.001": {
+    "precision": 0.0017014997223201607,
+    "f1": 0.0033965559253358504
+   }
+  }
+ }
+}

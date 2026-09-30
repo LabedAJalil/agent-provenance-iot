@@ -1,0 +1,13 @@
+# Versions that reproduced the archived view-B forest counts exactly (outputs/rolling5_exclude_staging_helpers_repro).
+# scikit-learn 1.9.x returns out-of-bag probability 0 for the minority class with class_weight=balanced; stay on 1.8.x.
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.8.0
+scipy==1.18.1
+matplotlib==3.11.2
+seaborn==0.13.2
+tqdm==4.70.1
+openai
+# flow mode only (not used by the manuscript)
+dpkt
+scapy
